@@ -4,7 +4,7 @@ const AXIS_MAX = MAX_AGE + 1; // 横軸の右端（100歳の帯 [100, 101) ま�
 const THUMB = 18;             // スライダーのつまみの幅（style.css と合わせる）
 const DEFAULT_AGE = 30;       // 初めて開いたときの年齢
 const AHEAD_YEARS = 15;       // 「この先に花開く人」は最長この年数先まで
-const V = 13;                  // データのキャッシュよけ
+const V = 14;                  // データのキャッシュよけ
 const state = {
   people: [], byId: new Map(), pv: { ja: {}, en: {} },
   // view: 表示中の年齢（ドラッグ中も動く） / myAge: 確定した年齢（離したとき。見出しはこちらで作る）
@@ -498,7 +498,13 @@ async function loadCredit(file) {
         + "&prop=imageinfo&iiprop=extmetadata&iiextmetadatafilter=Artist|LicenseShortName&titles="
         + encodeURIComponent(`File:${file}`);
       const m = (await (await fetch(url)).json()).query.pages[0].imageinfo[0].extmetadata;
-      const plain = (h) => { const d = document.createElement("div"); d.innerHTML = h || ""; return d.textContent.trim(); };
+      // 作者欄は HTML。非表示の重複（display:none の span）を除いて文字だけにする
+      const plain = (h) => {
+        const d = document.createElement("div");
+        d.innerHTML = h || "";
+        d.querySelectorAll('[style*="display: none"],[style*="display:none"]').forEach((x) => x.remove());
+        return d.textContent.replace(/\s+/g, " ").trim();
+      };
       c = { artist: plain(m.Artist?.value), license: plain(m.LicenseShortName?.value) };
       creditCache.set(file, c);
     } catch (e) {
