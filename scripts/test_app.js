@@ -120,6 +120,11 @@ setTimeout(async () => {
   const vermeer = run(`(function () { const p = state.people.find((x) => x.name.en === "Johannes Vermeer"); return p ? deathLabel(p) : null; })()`);
   check("生没が年までの人は幅で出る（フェルメール）", vermeer === null || /〜/.test(String(vermeer)), String(vermeer));
 
+  // 共有の文面：年齢と見出しの3行
+  run("state.view = 30; commitAge();");
+  const shared = run("shareText()");
+  check("共有の文面に年齢と見出しが入る", shared.startsWith("30歳。") && shared.split("\n").length >= 3, shared.split("\n").slice(0, 2).join(" / "));
+
   // 検索
   const hit = run(`search("あいんしゅたいん").map((p) => p.name.en)`);
   check("検索（ひらがな）", hit.includes("Albert Einstein"), hit.slice(0, 3).join(","));

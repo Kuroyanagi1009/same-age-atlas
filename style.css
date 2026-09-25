@@ -41,6 +41,9 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 16px 48px; }
 .compare .died { color: var(--blue); }
 .compare .turning { color: var(--teal); }
 .compare .bloom { color: var(--gold); }
+.share { margin-top: 10px; background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 999px; padding: 4px 14px; font-size: 0.8rem; cursor: pointer; }
+.share:hover { color: var(--text); border-color: rgba(255,255,255,0.3); }
+.share-msg { display: block; min-height: 1.2em; font-size: 0.75rem; color: var(--teal); margin-top: 4px; }
 .compare .hd { display: block; font-family: var(--sans); font-size: 0.72rem; color: var(--muted); }
 
 .sky-wrap { position: relative; margin-top: 28px; }

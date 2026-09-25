@@ -36,6 +36,8 @@ const I18N = {
     close: "閉じる",
     wiki: "Wikipedia で読む",
     photo: "写真",
+    share: "この年齢を共有",
+    copied: "文面とリンクをコピーしました",
     fame: "知名度（日本語版Wikipediaの直近30日の閲覧数）",
   },
   en: {
@@ -74,6 +76,8 @@ const I18N = {
     close: "Close",
     wiki: "Read on Wikipedia",
     photo: "Photo",
+    share: "Share this age",
+    copied: "Text and link copied",
     fame: "Fame (English Wikipedia views, last 30 days)",
   },
 };

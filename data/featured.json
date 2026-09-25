@@ -817,5 +817,47 @@
 {"id":"chatterton","wiki":"Thomas Chatterton","ja":"トマス・チャタートン","en":"Thomas Chatterton","born":"1752-11-20","died":"1770-08-24","field":"literature","country":"GB",
  "desc_ja":"中世の僧に仮託した詩で知られ、17歳で没した英国の詩人。ロマン派の詩人たちに崇拝された","desc_en":"English poet known for his pseudo-medieval verse, dead at 17 and revered by the Romantics",
  "milestones":[
-  {"date": "1770-04", "type": "turning", "ja": "17歳でブリストルからロンドンに出て、文筆で身を立てようとする", "en": "At 17, moves from Bristol to London to live by his pen"}]}
+  {"date": "1770-04", "type": "turning", "ja": "17歳でブリストルからロンドンに出て、文筆で身を立てようとする", "en": "At 17, moves from Bristol to London to live by his pen"}]},
+{"id":"tezuka","wiki":"Osamu Tezuka","ja":"手塚治虫","en":"Osamu Tezuka","born":"1928-11-03","died":"1989-02-09","field":"arts","country":"JP",
+ "desc_ja":"『鉄腕アトム』『ブラック・ジャック』などで戦後の漫画・アニメを切り開いた「漫画の神様」","desc_en":"The 'god of manga', creator of Astro Boy and Black Jack",
+ "milestones":[
+  {"date": "1947-01", "type": "breakthrough", "ja": "18歳で『新宝島』を刊行し、大ヒット", "en": "Publishes New Treasure Island at 18, a runaway hit"},
+  {"date": "1963-01-01", "type": "masterpiece", "ja": "34歳で『鉄腕アトム』のテレビアニメ放送が始まる", "en": "The Astro Boy TV anime begins airing when he is 34"}]},
+{"id":"utada","wiki":"Hikaru Utada","ja":"宇多田ヒカル","en":"Hikaru Utada","born":"1983-01-19","died":null,"field":"arts","country":"JP",
+ "desc_ja":"15歳でデビューし、日本で最も売れたアルバムを作ったシンガーソングライター","desc_en":"Singer-songwriter who debuted at 15 and made Japan's best-selling album",
+ "milestones":[
+  {"date": "1998-12-09", "type": "debut", "kind": "turning", "ja": "15歳で『Automatic/time will tell』でデビュー", "en": "Debuts at 15 with 'Automatic/time will tell'"},
+  {"date": "1999-03-10", "type": "masterpiece", "ja": "16歳で『First Love』を発表。日本で最も売れたアルバムに", "en": "Releases First Love at 16, Japan's best-selling album ever"}]},
+{"id":"asada","wiki":"Mao Asada","ja":"浅田真央","en":"Mao Asada","born":"1990-09-25","died":null,"field":"sports","country":"JP",
+ "desc_ja":"トリプルアクセルを武器に世界選手権を3度制したフィギュアスケーター","desc_en":"Figure skater and three-time world champion known for her triple Axel",
+ "milestones":[
+  {"date": "2005-12-17", "type": "award", "ja": "15歳でグランプリファイナル優勝", "en": "Wins the Grand Prix Final at 15"},
+  {"date": "2010-02-25", "type": "award", "ja": "19歳でバンクーバー五輪銀メダル", "en": "Wins Olympic silver in Vancouver at 19"}]},
+{"id":"hirano","wiki":"Ayumu Hirano","ja":"平野歩夢","en":"Ayumu Hirano","born":"1998-11-29","died":null,"field":"sports","country":"JP",
+ "desc_ja":"15歳で冬季五輪のメダリストとなり、北京五輪で金メダルを獲ったスノーボーダー","desc_en":"Snowboarder who medaled at 15 and won Olympic gold in Beijing",
+ "milestones":[
+  {"date": "2014-02-11", "type": "award", "ja": "15歳、ソチ五輪ハーフパイプで銀メダル（日本の冬季五輪で最年少）", "en": "Wins halfpipe silver in Sochi at 15, Japan's youngest Winter Olympic medalist"},
+  {"date": "2022-02-11", "type": "award", "ja": "23歳、北京五輪ハーフパイプで金メダル", "en": "Wins halfpipe gold in Beijing at 23"}]},
+{"id":"nakamura_sumire","wiki":"Sumire Nakamura","ja":"仲邑菫","en":"Sumire Nakamura","born":"2009-03-02","died":null,"field":"sports","country":"JP",
+ "desc_ja":"10歳でプロ入りした囲碁棋士（史上最年少）","desc_en":"Go player who turned professional at 10, the youngest ever in Japan",
+ "milestones":[
+  {"date": "2019-04-01", "type": "debut", "kind": "turning", "ja": "10歳で囲碁のプロ棋士に（史上最年少）", "en": "Becomes a professional Go player at 10, the youngest ever"},
+  {"date": "2023-02-02", "type": "award", "ja": "13歳で女流棋聖を獲得（史上最年少タイトル）", "en": "Wins the Women's Kisei title at 13, the youngest title holder"}]},
+{"id":"iyama","wiki":"Yuta Iyama","ja":"井山裕太","en":"Yuta Iyama","born":"1989-05-24","died":null,"field":"sports","country":"JP",
+ "desc_ja":"囲碁の七大タイトルを同時に独占した初の棋士","desc_en":"The first Go player to hold all seven major Japanese titles at once",
+ "milestones":[
+  {"date": "2002-04-01", "type": "debut", "kind": "turning", "ja": "12歳で囲碁のプロ棋士に", "en": "Becomes a professional Go player at 12"},
+  {"date": "2016-04-20", "type": "breakthrough", "ja": "26歳で七冠を独占（史上初）", "en": "Holds all seven major titles at 26, a first"}]},
+{"id":"ozaki","wiki":"Yutaka Ozaki","ja":"尾崎豊","en":"Yutaka Ozaki","born":"1965-11-29","died":"1992-04-25","field":"arts","country":"JP",
+ "desc_ja":"10代の葛藤を歌い「10代の教祖」と呼ばれ、26歳で没したシンガーソングライター","desc_en":"Singer-songwriter who voiced teenage angst, dead at 26",
+ "milestones":[
+  {"date": "1983-12-01", "type": "debut", "kind": "turning", "ja": "18歳で『15の夜』でデビュー", "en": "Debuts at 18 with '15 no Yoru'"}]},
+{"id":"yosano","wiki":"Yosano Akiko","ja":"与謝野晶子","en":"Yosano Akiko","born":"1878-12-07","died":"1942-05-29","field":"literature","country":"JP",
+ "desc_ja":"情熱的な短歌で明治の歌壇に衝撃を与えた歌人","desc_en":"Poet whose passionate tanka shook Meiji-era Japan",
+ "milestones":[
+  {"date": "1901-08-15", "type": "masterpiece", "ja": "22歳で歌集『みだれ髪』を刊行", "en": "Publishes the tanka collection Tangled Hair at 22"}]},
+{"id":"osaka","wiki":"Naomi Osaka","ja":"大坂なおみ","en":"Naomi Osaka","born":"1997-10-16","died":null,"field":"sports","country":"JP",
+ "desc_ja":"アジア出身の選手として初めて世界ランク1位となったテニス選手","desc_en":"Tennis player, the first Asian player to reach world number one in singles",
+ "milestones":[
+  {"date": "2018-09-08", "type": "award", "ja": "20歳で全米オープン優勝（日本人初の4大大会シングルス制覇）", "en": "Wins the US Open at 20, Japan's first Grand Slam singles title"}]}
 ]

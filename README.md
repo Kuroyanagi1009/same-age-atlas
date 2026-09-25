@@ -21,7 +21,7 @@ python -m http.server 8795 --bind 127.0.0.1
 |---|---|
 | `index.html` / `style.css` / `app.js` | 画面。ビルド不要のバニラJS |
 | `i18n.js` | 日英の文言 |
-| `data/featured.json` | 主役（手作業・178人。うち早熟の天才47人）。生没年月日・人物説明・転機/開花（日英） |
+| `data/featured.json` | 主役（手作業・189人。うち早熟・若い功績56人）。生没年月日・人物説明・転機/開花（日英） |
 | `data/seed_vital.txt` | 知名度に関係なく入れる各分野の代表的人物（英語版の記事名） |
 | `data/stars.json` | 背景の星（Wikidata から自動取得＋説明文は Wikipedia 冒頭文） |
 | `data/fame.json` | 知名度（日英 Wikipedia の直近30日の閲覧数）と、主役の日本語版記事名・写真 |

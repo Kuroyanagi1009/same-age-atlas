@@ -4,7 +4,7 @@ const AXIS_MAX = MAX_AGE + 1; // 横軸の右端（100歳の帯 [100, 101) ま�
 const THUMB = 18;             // スライダーのつまみの幅（style.css と合わせる）
 const DEFAULT_AGE = 30;       // 初めて開いたときの年齢
 const AHEAD_YEARS = 15;       // 「この先に花開く人」は最長この年数先まで
-const V = 12;                  // データのキャッシュよけ
+const V = 13;                  // データのキャッシュよけ
 const state = {
   people: [], byId: new Map(), pv: { ja: {}, en: {} },
   // view: 表示中の年齢（ドラッグ中も動く） / myAge: 確定した年齢（離したとき。見出しはこちらで作る）
@@ -235,6 +235,7 @@ function bindInputs() {
   $("card").addEventListener("click", (ev) => { if (ev.target === $("card")) closeCard(); });
   document.addEventListener("keydown", (ev) => { if (ev.key === "Escape") { closeCard(); $("hits").hidden = true; } });
   bindSearch();
+  $("share").addEventListener("click", share);
 }
 
 // ---------- 表示 ----------
@@ -321,7 +322,9 @@ function renderHeadline() {
 
   const ppl = state.people.filter(visible);
   const li = [];
+  state.headLines = []; // 共有の文面にも使う
   const line = (cls, text, p) => {
+    state.headLines.push(text);
     const d = descOf(p);
     li.push(`<li class="${cls}">${esc(text)}${d ? `<span class="hd">${esc(short(d, 44))}</span>` : ""}</li>`);
   };
@@ -459,6 +462,29 @@ function openCard(id) {
   $("card").hidden = false;
   if (p.img) loadCredit(p.img);
 }
+// ---------- 共有 ----------
+// 見出しの3行と、この年齢で開けるURLをまとめる。共有メニューがあればそれを、なければクリップボードへ
+function shareText() {
+  const head = LANG === "ja" ? `${state.myAge}歳。` : `Age ${state.myAge}.`;
+  return [head, ...(state.headLines || [])].join("\n");
+}
+async function share() {
+  syncUrl();
+  const url = location.href;
+  const text = shareText();
+  try {
+    if (navigator.share) {
+      await navigator.share({ title: t("title"), text, url });
+      return;
+    }
+    await navigator.clipboard.writeText(`${text}\n${url}`);
+    $("shareMsg").textContent = t("copied");
+  } catch (e) {
+    $("shareMsg").textContent = "";
+  }
+  setTimeout(() => { $("shareMsg").textContent = ""; }, 2500);
+}
+
 // ---------- 写真（Wikimedia Commons） ----------
 // 画像は Commons の縮小版を直接読む。作者とライセンスは画像ごとに違うので、カードを開いたときに取りに行って添える
 const commonsThumb = (f) => `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(f)}?width=240`;
