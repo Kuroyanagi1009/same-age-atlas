@@ -4,7 +4,7 @@ const AXIS_MAX = MAX_AGE + 1; // 横軸の右端（100歳の帯 [100, 101) ま�
 const THUMB = 18;             // スライダーのつまみの幅（style.css と合わせる）
 const DEFAULT_AGE = 30;       // 初めて開いたときの年齢
 const AHEAD_YEARS = 15;       // 「この先に花開く人」は最長この年数先まで
-const V = 11;                  // データのキャッシュよけ
+const V = 12;                  // データのキャッシュよけ
 const state = {
   people: [], byId: new Map(), pv: { ja: {}, en: {} },
   // view: 表示中の年齢（ドラッグ中も動く） / myAge: 確定した年齢（離したとき。見出しはこちらで作る）
@@ -59,6 +59,7 @@ function makePerson(p) {
     deathAge: null, deathLo: null, deathHi: null,
     desc: { ja: p.desc_ja || "", en: p.desc_en || "" },
     wiki: p.wiki || {},
+    img: p.img || "",
     events: [],
   };
   // 星の位置（決定的な擬似乱数）
@@ -124,7 +125,7 @@ async function loadData() {
   if (fame) state.pv = fame.pv;
   const meta = (fame && fame.featured) || {};
   addPeople(featured.map((p) => makePerson({
-    ...p, featured: true, wiki: { en: p.wiki, ja: meta[p.id]?.tja || "" },
+    ...p, featured: true, wiki: { en: p.wiki, ja: meta[p.id]?.tja || "" }, img: meta[p.id]?.img || "",
   })));
   const knownQ = new Set(Object.values(meta).map((m) => m.q));
   const knownTitles = new Set(featured.map((p) => p.wiki));
@@ -134,7 +135,7 @@ async function loadData() {
     const stars = await getJSON("data/stars.json");
     addPeople(stars.filter((s) => !knownQ.has(s.q) && !knownTitles.has(s.ten)).map((s) => makePerson({
       id: s.q, en: s.en, ja: s.ja, born: datePrec(s.b, s.bp ?? 11), died: s.d && datePrec(s.d, s.dp ?? 11), field: s.f, sl: s.sl,
-      desc_en: s.den, desc_ja: s.dja, wiki: { en: s.ten, ja: s.tja },
+      desc_en: s.den, desc_ja: s.dja, wiki: { en: s.ten, ja: s.tja }, img: s.img,
       milestones: s.ev.map((e) => {
         const tx = starEventText(e);
         return { date: datePrec(e.date, e.p), type: e.type, kind: e.kind, ja: tx.ja, en: tx.en };
@@ -160,10 +161,22 @@ const byScore = (x, y) => score(y) - score(x);
 
 // ---------- 入力 ----------
 // 年齢は前回選んだものを覚えておく（初回は30歳）
+// 年齢の決め方：URL の ?age= が最優先（人に送ったリンクで同じ年齢を開ける）→ 前回の年齢 → 30歳
 function loadInputs() {
+  const ok = (a) => Number.isInteger(a) && a >= 0 && a <= MAX_AGE;
+  const fromUrl = parseInt(new URLSearchParams(location.search).get("age"), 10);
+  if (ok(fromUrl)) { state.myAge = state.view = fromUrl; return; }
   try {
     const a = parseInt(localStorage.getItem("ga.age"), 10);
-    if (a >= 0 && a <= MAX_AGE) state.myAge = state.view = a;
+    if (ok(a)) state.myAge = state.view = a;
+  } catch (e) {}
+}
+// アドレス欄の ?age= を今の年齢に合わせる（履歴は増やさない）
+function syncUrl() {
+  try {
+    const u = new URL(location.href);
+    u.searchParams.set("age", state.myAge);
+    history.replaceState(null, "", u);
   } catch (e) {}
 }
 
@@ -176,6 +189,7 @@ function setView(a) {
 function commitAge() {
   state.myAge = state.view;
   try { localStorage.setItem("ga.age", String(state.myAge)); } catch (e) {}
+  syncUrl();
   render();
 }
 
@@ -276,7 +290,7 @@ function render(headline = true) {
 }
 
 function renderChips() {
-  const fields = ["all", "science", "arts", "literature", "business", "politics", "sports"];
+  const fields = ["all", "science", "arts", "literature", "business", "politics", "sports", "other"];
   $("fields").innerHTML = "";
   for (const f of fields) {
     const b = document.createElement("button");
@@ -429,7 +443,11 @@ function openCard(id) {
   }
   const url = wikiUrl(p);
   const v = views(p);
-  $("cardBody").innerHTML = `
+  const photo = p.img ? `<figure class="photo">
+      <img src="${esc(commonsThumb(p.img))}" alt="${esc(nm(p))}" loading="lazy" onerror="this.closest('figure').remove()">
+      <figcaption id="credit"><a href="${esc(commonsPage(p.img))}" target="_blank" rel="noopener">Wikimedia Commons</a></figcaption>
+    </figure>` : "";
+  $("cardBody").innerHTML = photo + `
     <h3>${p.featured ? '<span class="feat">✦</span>' : ""}${esc(nm(p))}</h3>
     <div class="sub">${esc(LANG === "ja" ? p.name.en : p.name.ja)}</div>
     <div class="meta">${esc(t(`fields.${p.field}`))} · ${lifeSpan(p)}${p.deathAge != null ? ` · ${esc(t("died_at", { n: deathLabel(p) }))}` : ` · ${esc(t("living"))}`}</div>
@@ -439,7 +457,34 @@ function openCard(id) {
     <div class="cfoot">${url ? `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(t("wiki"))} ↗</a>` : ""}
       ${v ? `<span class="muted small">${esc(t("fame"))}: ${v.toLocaleString()}</span>` : ""}</div>`;
   $("card").hidden = false;
+  if (p.img) loadCredit(p.img);
 }
+// ---------- 写真（Wikimedia Commons） ----------
+// 画像は Commons の縮小版を直接読む。作者とライセンスは画像ごとに違うので、カードを開いたときに取りに行って添える
+const commonsThumb = (f) => `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(f)}?width=240`;
+const commonsPage = (f) => `https://commons.wikimedia.org/wiki/File:${encodeURIComponent(f)}`;
+const creditCache = new Map();
+async function loadCredit(file) {
+  let c = creditCache.get(file);
+  if (!c) {
+    try {
+      const url = "https://commons.wikimedia.org/w/api.php?action=query&format=json&formatversion=2&origin=*"
+        + "&prop=imageinfo&iiprop=extmetadata&iiextmetadatafilter=Artist|LicenseShortName&titles="
+        + encodeURIComponent(`File:${file}`);
+      const m = (await (await fetch(url)).json()).query.pages[0].imageinfo[0].extmetadata;
+      const plain = (h) => { const d = document.createElement("div"); d.innerHTML = h || ""; return d.textContent.trim(); };
+      c = { artist: plain(m.Artist?.value), license: plain(m.LicenseShortName?.value) };
+      creditCache.set(file, c);
+    } catch (e) {
+      return; // 取れなくても Commons へのリンクは出ている
+    }
+  }
+  const el = $("credit");
+  if (!el) return;
+  const who = [c.artist && short(c.artist, 40), c.license].filter(Boolean).join(" / ");
+  el.innerHTML = `${t("photo")}: ${esc(who || "")} · <a href="${esc(commonsPage(file))}" target="_blank" rel="noopener">Wikimedia Commons</a>`;
+}
+
 function closeCard() { $("card").hidden = true; state.cardId = null; }
 
 // ---------- 星空 ----------

@@ -10,6 +10,9 @@ python -m http.server 8795 --bind 127.0.0.1
 ```
 → http://127.0.0.1:8795/ （file:// では JSON を読めない）
 
+または `同い年の星図を開く.cmd` をダブルクリック（サーバー起動とブラウザ表示をまとめて行う）。
+`?age=45` を付けると45歳の画面で開く。
+
 ## ファイル
 
 更新履歴は `CHANGELOG.md`。
@@ -29,6 +32,9 @@ python -m http.server 8795 --bind 127.0.0.1
 | `scripts/fields.py` | 分野の判定（Wikidata の短い説明文から） |
 | `scripts/check_featured.py` | `featured.json` の検査（生没年を Wikidata と照合、文中の「N歳」と計算年齢の一致） |
 | `scripts/format_featured.py` | `featured.json` の整形。`data/_new.json` があれば取り込む |
+| `scripts/test_app.js` | 画面の処理の自動テスト（`node scripts/test_app.js`） |
+| `同い年の星図を開く.cmd` | ダブルクリックで起動してブラウザで開く |
+| `ROADMAP.md` | 改善案と優先順位 |
 
 データを作り直す手順: `fetch_wikidata.py` → `fetch_descriptions.py` → `fetch_fame.py`
 （後処理だけ直したときは `fetch_wikidata.py --resume` で取得をやり直さずに済む）

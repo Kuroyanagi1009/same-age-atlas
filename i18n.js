@@ -35,6 +35,7 @@ const I18N = {
     life: "生涯",
     close: "閉じる",
     wiki: "Wikipedia で読む",
+    photo: "写真",
     fame: "知名度（日本語版Wikipediaの直近30日の閲覧数）",
   },
   en: {
@@ -72,6 +73,7 @@ const I18N = {
     life: "Life",
     close: "Close",
     wiki: "Read on Wikipedia",
+    photo: "Photo",
     fame: "Fame (English Wikipedia views, last 30 days)",
   },
 };

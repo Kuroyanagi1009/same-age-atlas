@@ -533,7 +533,7 @@ def main():
         if not died and this_year - ymd(born)[0] > 110:
             drop("没年の記録漏れと思われる")
             continue
-        if died and died <= born:
+        if died and ymd(died) <= ymd(born):  # 文字列で比べると紀元前（"-0100" など）の順序を誤る
             drop("生没の前後が逆")
             continue
         name_en = p.get("en")

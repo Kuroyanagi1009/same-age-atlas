@@ -88,6 +88,11 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 16px 48px; }
 .card-wrap { position: fixed; inset: 0; z-index: 20; background: rgba(3,4,10,0.7); display: flex; align-items: flex-start; justify-content: center; padding: 8vh 16px 16px; overflow-y: auto; }
 .card-wrap[hidden] { display: none; }
 .card { position: relative; width: 100%; max-width: 560px; background: #0d1224; border: 1px solid var(--line); border-radius: 16px; padding: 22px 22px 18px; box-shadow: 0 20px 60px rgba(0,0,0,0.6); }
+.card .photo { float: right; margin: 0 0 8px 14px; width: 120px; }
+.card .photo img { width: 120px; height: 150px; object-fit: cover; border-radius: 10px; display: block; background: var(--panel); }
+.card .photo figcaption { font-size: 0.62rem; color: var(--muted); margin-top: 4px; line-height: 1.3; word-break: break-word; }
+.card .photo a { color: var(--muted); }
+.card .tl { clear: both; }
 .card h3 { font-family: var(--serif); font-weight: 700; font-size: 1.5rem; margin: 0; }
 .card .feat { color: var(--gold); margin-right: 6px; }
 .card .sub { color: var(--muted); font-size: 0.85rem; }
