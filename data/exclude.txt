@@ -1,0 +1,59 @@
+# 背景の星に載せない人物（QID か Wikidata の英語名、1行に1人）。
+# 自動の除外（存命の政治家・ナチ党員・職業がテロや犯罪）で漏れる人をここに足す。
+# 基準: 大量虐殺・テロ・重大犯罪の主導者として主に知られる人物。
+#       存命の政治家は自動で外すが、主な分野が政治と判定されない人はここに書く
+Q352        # Adolf Hitler
+Q855        # Joseph Stalin
+Q5816       # Mao Zedong
+Q39464      # Pol Pot
+Q23559      # Benito Mussolini
+Q1316       # Saddam Hussein
+Q1317       # Osama bin Laden
+Kim Il-sung
+Kim Jong-il
+Kim Jong Un
+Idi Amin
+Augusto Pinochet
+Francisco Franco
+Hideki Tojo
+Muammar Gaddafi
+Nicolae Ceaușescu
+Lavrentiy Beria
+Heinrich Himmler
+Joseph Goebbels
+Hermann Göring
+Reinhard Heydrich
+Adolf Eichmann
+Josef Mengele
+Rudolf Hess
+Charles Manson
+Ted Kaczynski
+Pablo Escobar
+Al Capone
+Shoko Asahara
+Jim Jones
+Ayman al-Zawahiri
+Abu Bakr al-Baghdadi
+Leopold II of Belgium
+Talaat Pasha
+Lee Harvey Oswald
+John Wilkes Booth
+Timothy McVeigh
+Mohamed Atta
+Jeffrey Dahmer
+Ted Bundy
+Vladimir Lenin
+Fidel Castro
+Che Guevara
+Mobutu Sese Seko
+Robert Mugabe
+Suharto
+Enver Hoxha
+Mengistu Haile Mariam
+Shōkō Asahara
+Muammar al-Gaddafi
+Donald Trump
+Philippe Pétain
+Vidkun Quisling
+Pierre Laval
+Yevgeny Prigozhin

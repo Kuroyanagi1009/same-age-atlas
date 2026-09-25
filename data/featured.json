@@ -1,0 +1,821 @@
+[
+{"id":"galois","wiki":"Évariste Galois","ja":"エヴァリスト・ガロア","en":"Évariste Galois","born":"1811-10-25","died":"1832-05-31","field":"science","country":"FR",
+ "desc_ja":"10代で方程式の解の構造を解き明かし、群論の礎を築いたフランスの数学者","desc_en":"French mathematician who, still a teenager, laid the foundations of group theory",
+ "milestones":[
+  {"date": "1829-04", "type": "debut", "ja": "最初の論文を発表", "en": "Publishes his first paper"},
+  {"date": "1830-02", "type": "breakthrough", "ja": "方程式の可解性に関する論文を科学アカデミーの懸賞に提出", "en": "Submits his memoir on the solvability of equations for the Academy of Sciences prize"}]},
+{"id":"mozart","wiki":"Wolfgang Amadeus Mozart","ja":"ヴォルフガング・アマデウス・モーツァルト","en":"Wolfgang Amadeus Mozart","born":"1756-01-27","died":"1791-12-05","field":"arts","country":"AT",
+ "desc_ja":"35年の生涯で600曲以上を残した古典派の作曲家","desc_en":"Classical composer who wrote over 600 works in 35 years",
+ "milestones":[
+  {"date": "1761", "type": "debut", "ja": "5歳で最初の作曲", "en": "Composes his first pieces at five", "kind": "turning", "age": 5},
+  {"date": "1786-05-01", "type": "masterpiece", "ja": "『フィガロの結婚』初演", "en": "Premiere of The Marriage of Figaro"},
+  {"date": "1791-09-30", "type": "masterpiece", "ja": "『魔笛』を初演。『レクイエム』は未完のまま", "en": "The Magic Flute premieres; the Requiem is left unfinished"}]},
+{"id":"raphael","wiki":"Raphael","ja":"ラファエロ・サンティ","en":"Raphael","born":"1483-04-06","died":"1520-04-06","field":"arts","country":"IT",
+ "desc_ja":"ルネサンス三大巨匠の一人。調和に満ちた聖母像と壁画で知られる画家","desc_en":"One of the three giants of the High Renaissance, famed for serene Madonnas and frescoes",
+ "milestones":[
+  {"date": "1509", "type": "masterpiece", "ja": "バチカンで『アテナイの学堂』に着手", "en": "Begins The School of Athens in the Vatican"}]},
+{"id":"ichiyo","wiki":"Ichiyō Higuchi","ja":"樋口一葉","en":"Higuchi Ichiyō","born":"1872-05-02","died":"1896-11-23","field":"literature","country":"JP",
+ "desc_ja":"貧困のなか『たけくらべ』『にごりえ』を書き、五千円札の肖像にもなった明治の作家","desc_en":"Meiji-era writer of Child's Play, later pictured on Japan's 5,000-yen note",
+ "milestones":[
+  {"date": "1895-01", "type": "masterpiece", "ja": "『たけくらべ』連載開始。「奇跡の14か月」が始まる", "en": "Begins serializing Child's Play — her 'miraculous fourteen months'"}]},
+{"id":"abel","wiki":"Niels Henrik Abel","ja":"ニールス・アーベル","en":"Niels Henrik Abel","born":"1802-08-05","died":"1829-04-06","field":"science","country":"NO",
+ "desc_ja":"五次方程式の解の公式が存在しないことを証明したノルウェーの数学者。アーベル賞に名を残す","desc_en":"Norwegian mathematician who proved the quintic unsolvable; the Abel Prize bears his name",
+ "milestones":[
+  {"date": "1824", "type": "breakthrough", "ja": "五次方程式が代数的に解けないことを証明", "en": "Proves the general quintic cannot be solved by radicals"}]},
+{"id":"ramanujan","wiki":"Srinivasa Ramanujan","ja":"シュリニヴァーサ・ラマヌジャン","en":"Srinivasa Ramanujan","born":"1887-12-22","died":"1920-04-26","field":"science","country":"IN",
+ "desc_ja":"正規の教育をほぼ受けずに約3900の公式を残したインドの数学者","desc_en":"Indian mathematician who, with little formal training, left some 3,900 results",
+ "milestones":[
+  {"date": "1913-01-16", "type": "turning", "ja": "独学の定理を書き連ねた手紙をハーディに送る", "en": "Sends G. H. Hardy a letter full of self-taught theorems"},
+  {"date": "1918-05-02", "type": "award", "ja": "王立協会フェローに選出", "en": "Elected Fellow of the Royal Society"}]},
+{"id":"schubert","wiki":"Franz Schubert","ja":"フランツ・シューベルト","en":"Franz Schubert","born":"1797-01-31","died":"1828-11-19","field":"arts","country":"AT",
+ "desc_ja":"600曲以上の歌曲を残し「歌曲の王」と呼ばれるオーストリアの作曲家","desc_en":"Austrian composer of over 600 songs, the 'Prince of Song'",
+ "milestones":[
+  {"date": "1815-10", "type": "masterpiece", "ja": "18歳で『魔王』を作曲", "en": "Writes Erlkönig at eighteen"}]},
+{"id":"vangogh","wiki":"Vincent van Gogh","ja":"フィンセント・ファン・ゴッホ","en":"Vincent van Gogh","born":"1853-03-30","died":"1890-07-29","field":"arts","country":"NL",
+ "desc_ja":"生前ほとんど絵が売れず、死後に最も愛される画家の一人となったポスト印象派","desc_en":"Post-Impressionist who sold almost nothing in life and became one of the most loved painters",
+ "milestones":[
+  {"date": "1880-08", "type": "turning", "ja": "27歳で画家になると決意", "en": "Decides at 27 to become an artist"},
+  {"date": "1889-06", "type": "masterpiece", "ja": "『星月夜』を描く", "en": "Paints The Starry Night"}]},
+{"id":"keats","wiki":"John Keats","ja":"ジョン・キーツ","en":"John Keats","born":"1795-10-31","died":"1821-02-23","field":"literature","country":"GB",
+ "desc_ja":"『ナイチンゲールに寄せるオード』で知られる英国ロマン派の詩人","desc_en":"English Romantic poet, author of the great odes",
+ "milestones":[
+  {"date": "1819-05", "type": "masterpiece", "ja": "『ナイチンゲールに寄せるオード』など主要なオードを書く", "en": "Writes his great odes, including Ode to a Nightingale"}]},
+{"id":"shelley","wiki":"Percy Bysshe Shelley","ja":"パーシー・ビッシュ・シェリー","en":"Percy Bysshe Shelley","born":"1792-08-04","died":"1822-07-08","field":"literature","country":"GB",
+ "desc_ja":"『鎖を解かれたプロメテウス』で知られる英国ロマン派を代表する詩人","desc_en":"Leading English Romantic poet, author of Prometheus Unbound",
+ "milestones":[
+  {"date": "1820", "type": "masterpiece", "ja": "『鎖を解かれたプロメテウス』刊行", "en": "Publishes Prometheus Unbound"}]},
+{"id":"byron","wiki":"Lord Byron","ja":"ジョージ・ゴードン・バイロン","en":"Lord Byron","born":"1788-01-22","died":"1824-04-19","field":"literature","country":"GB",
+ "desc_ja":"英国ロマン派の詩人。ギリシャ独立戦争に身を投じ、戦地で病没した","desc_en":"English Romantic poet who died while supporting Greek independence",
+ "milestones":[
+  {"date": "1812-03", "type": "breakthrough", "ja": "『チャイルド・ハロルドの巡礼』で一夜にして有名に", "en": "Childe Harold's Pilgrimage makes him famous overnight"}]},
+{"id":"rimbaud","wiki":"Arthur Rimbaud","ja":"アルチュール・ランボー","en":"Arthur Rimbaud","born":"1854-10-20","died":"1891-11-10","field":"literature","country":"FR",
+ "desc_ja":"10代で近代詩を塗り替え、20歳で筆を折ったフランスの詩人","desc_en":"French poet who remade modern poetry in his teens and quit at twenty",
+ "milestones":[
+  {"date": "1873", "type": "masterpiece", "ja": "『地獄の季節』刊行", "en": "Publishes A Season in Hell"},
+  {"date": "1875", "type": "turning", "ja": "20歳で詩を捨て、放浪と交易の人生へ", "en": "Abandons poetry at twenty for a life of travel and trade", "age": 20}]},
+{"id":"alexander","wiki":"Alexander the Great","ja":"アレクサンドロス大王","en":"Alexander the Great","born":"-0355-07-20","died":"-0322-06-10","approx":true,"field":"politics","country":"GR",
+ "desc_ja":"ギリシャからインド北西部に及ぶ大帝国を築いたマケドニア王","desc_en":"King of Macedon whose empire stretched from Greece to northwest India",
+ "milestones":[
+  {"date": "-0335", "age": 20, "type": "turning", "ja": "20歳でマケドニア王に即位", "en": "Becomes king of Macedon at twenty"},
+  {"date": "-0330", "age": 25, "type": "breakthrough", "ja": "ペルシア帝国を征服", "en": "Conquers the Persian Empire"}]},
+{"id":"basquiat","wiki":"Jean-Michel Basquiat","ja":"ジャン＝ミシェル・バスキア","en":"Jean-Michel Basquiat","born":"1960-12-22","died":"1988-08-12","field":"arts","country":"US",
+ "desc_ja":"ストリートのグラフィティから出発し、80年代美術界の寵児となった画家","desc_en":"Painter who rose from street graffiti to the center of the 1980s art world",
+ "milestones":[
+  {"date": "1981-05", "type": "breakthrough", "ja": "20歳でギャラリーデビュー、一躍スターに", "en": "Gallery debut at twenty; overnight stardom"}]},
+{"id":"hendrix","wiki":"Jimi Hendrix","ja":"ジミ・ヘンドリックス","en":"Jimi Hendrix","born":"1942-11-27","died":"1970-09-18","field":"arts","country":"US",
+ "desc_ja":"エレキギターの表現を一変させたロックギタリスト","desc_en":"Rock guitarist who transformed what the electric guitar could do",
+ "milestones":[
+  {"date": "1967-06-18", "type": "breakthrough", "ja": "モントレー・ポップ・フェスでギターに火を放つ", "en": "Sets his guitar on fire at the Monterey Pop Festival"}]},
+{"id":"joplin","wiki":"Janis Joplin","ja":"ジャニス・ジョプリン","en":"Janis Joplin","born":"1943-01-19","died":"1970-10-04","field":"arts","country":"US",
+ "desc_ja":"圧倒的な歌唱で60年代ロックを象徴した歌手","desc_en":"Singer whose raw voice defined 1960s rock",
+ "milestones":[
+  {"date": "1967-06", "type": "breakthrough", "ja": "モントレー・ポップ・フェスで注目を集める", "en": "Breaks through at the Monterey Pop Festival"}]},
+{"id":"cobain","wiki":"Kurt Cobain","ja":"カート・コバーン","en":"Kurt Cobain","born":"1967-02-20","died":"1994-04-05","field":"arts","country":"US",
+ "desc_ja":"ニルヴァーナのフロントマン。グランジを世界に広めた","desc_en":"Nirvana frontman who brought grunge to the world",
+ "milestones":[
+  {"date": "1991-09-24", "type": "masterpiece", "ja": "『ネヴァーマインド』発売", "en": "Releases Nevermind"}]},
+{"id":"winehouse","wiki":"Amy Winehouse","ja":"エイミー・ワインハウス","en":"Amy Winehouse","born":"1983-09-14","died":"2011-07-23","field":"arts","country":"GB",
+ "desc_ja":"ソウルとジャズを現代に蘇らせた英国の歌手","desc_en":"British singer who revived soul and jazz for a new generation",
+ "milestones":[
+  {"date": "2006-10-27", "type": "masterpiece", "ja": "『バック・トゥ・ブラック』発売", "en": "Releases Back to Black"},
+  {"date": "2008-02-10", "type": "award", "ja": "グラミー賞5部門受賞", "en": "Wins five Grammy Awards"}]},
+{"id":"dean","wiki":"James Dean","ja":"ジェームズ・ディーン","en":"James Dean","born":"1931-02-08","died":"1955-09-30","field":"arts","country":"US",
+ "desc_ja":"わずか3本の主演作で若者の反抗の象徴となった俳優","desc_en":"Actor who became the icon of youthful rebellion with just three leading roles",
+ "milestones":[
+  {"date": "1955-03-09", "type": "breakthrough", "ja": "主演作『エデンの東』が公開", "en": "East of Eden is released"}]},
+{"id":"brucelee","wiki":"Bruce Lee","ja":"ブルース・リー","en":"Bruce Lee","born":"1940-11-27","died":"1973-07-20","field":"arts","country":"HK",
+ "desc_ja":"截拳道を創始し、カンフー映画を世界に広めた武道家・俳優","desc_en":"Martial artist and actor who founded Jeet Kune Do and took kung fu films global",
+ "milestones":[
+  {"date": "1971-10", "type": "breakthrough", "ja": "『ドラゴン危機一発』で香港映画の記録を塗り替える", "en": "The Big Boss breaks Hong Kong box-office records"}]},
+{"id":"annefrank","wiki":"Anne Frank","ja":"アンネ・フランク","en":"Anne Frank","born":"1929-06-12","died":"1945-02-28","approx":true,"field":"literature","country":"NL",
+ "desc_ja":"ナチスから隠れて暮らした日々を綴った『アンネの日記』の著者","desc_en":"Author of the diary she kept while hiding from the Nazis",
+ "milestones":[
+  {"date": "1942-06-12", "type": "debut", "ja": "13歳の誕生日に贈られた日記を書き始める", "en": "Begins the diary she received for her 13th birthday", "kind": "turning"}]},
+{"id":"joan","wiki":"Joan of Arc","ja":"ジャンヌ・ダルク","en":"Joan of Arc","born":"1412-01-06","died":"1431-05-30","approx":true,"field":"politics","country":"FR",
+ "desc_ja":"百年戦争でフランス軍を率いた「オルレアンの乙女」","desc_en":"The 'Maid of Orléans' who led French forces in the Hundred Years' War",
+ "milestones":[
+  {"date": "1429-05-08", "type": "breakthrough", "ja": "オルレアンの包囲を解く", "en": "Lifts the siege of Orléans"}]},
+{"id":"ryoma","wiki":"Sakamoto Ryōma","ja":"坂本龍馬","en":"Sakamoto Ryōma","born":"1836-01-03","died":"1867-12-10","field":"politics","country":"JP",
+ "desc_ja":"薩長同盟を仲介し、明治維新への道を開いた幕末の志士","desc_en":"Samurai who brokered the alliance that opened the way to the Meiji Restoration",
+ "milestones":[
+  {"date": "1862", "type": "turning", "ja": "土佐藩を脱藩", "en": "Leaves his domain of Tosa as a rōnin"},
+  {"date": "1866-03-07", "type": "breakthrough", "ja": "薩長同盟を仲介", "en": "Brokers the Satsuma–Chōshū Alliance"}]},
+{"id":"shoin","wiki":"Yoshida Shōin","ja":"吉田松陰","en":"Yoshida Shōin","born":"1830-09-20","died":"1859-11-21","field":"politics","country":"JP",
+ "desc_ja":"松下村塾で高杉晋作・伊藤博文らを育てた幕末の思想家","desc_en":"Thinker whose small school trained leaders of the Meiji Restoration",
+ "milestones":[
+  {"date": "1857", "type": "founding", "ja": "松下村塾を主宰し、維新の志士を育てる", "en": "Takes over the Shōka Sonjuku, training the men of the Restoration"}]},
+{"id":"takasugi","wiki":"Takasugi Shinsaku","ja":"高杉晋作","en":"Takasugi Shinsaku","born":"1839-09-27","died":"1867-05-17","field":"politics","country":"JP",
+ "desc_ja":"奇兵隊を創設し、長州藩を倒幕へ導いた幕末の志士","desc_en":"Founder of the Kiheitai militia who steered Chōshū toward overthrowing the shogunate",
+ "milestones":[
+  {"date": "1863", "type": "founding", "ja": "身分を問わない奇兵隊を結成", "en": "Forms the Kiheitai, a militia open to all classes"}]},
+{"id":"takuboku","wiki":"Takuboku Ishikawa","ja":"石川啄木","en":"Ishikawa Takuboku","born":"1886-02-20","died":"1912-04-13","field":"literature","country":"JP",
+ "desc_ja":"口語的な短歌で暮らしの哀歓を詠んだ歌人","desc_en":"Tanka poet who sang everyday life in plain modern language",
+ "milestones":[
+  {"date": "1910-12", "type": "masterpiece", "ja": "歌集『一握の砂』刊行", "en": "Publishes A Handful of Sand"}]},
+{"id":"kenji","wiki":"Kenji Miyazawa","ja":"宮沢賢治","en":"Kenji Miyazawa","born":"1896-08-27","died":"1933-09-21","field":"literature","country":"JP",
+ "desc_ja":"『銀河鉄道の夜』『雨ニモマケズ』の作者。生前はほぼ無名だった","desc_en":"Author of Night on the Galactic Railroad, almost unknown in his lifetime",
+ "milestones":[
+  {"date": "1924-04", "type": "debut", "ja": "詩集『春と修羅』を自費出版", "en": "Self-publishes Spring and Asura", "kind": "turning"}]},
+{"id":"chuya","wiki":"Chūya Nakahara","ja":"中原中也","en":"Chūya Nakahara","born":"1907-04-29","died":"1937-10-22","field":"literature","country":"JP",
+ "desc_ja":"『汚れつちまつた悲しみに』で知られる昭和の詩人","desc_en":"Shōwa-era poet of 'Upon This Sorrow Already Soiled'",
+ "milestones":[
+  {"date": "1934-12", "type": "debut", "ja": "詩集『山羊の歌』刊行", "en": "Publishes Goat Songs"}]},
+{"id":"akutagawa","wiki":"Ryūnosuke Akutagawa","ja":"芥川龍之介","en":"Ryūnosuke Akutagawa","born":"1892-03-01","died":"1927-07-24","field":"literature","country":"JP",
+ "desc_ja":"『羅生門』『蜘蛛の糸』の作者。その名は芥川賞に残る","desc_en":"Author of Rashōmon; Japan's best-known literary prize bears his name",
+ "milestones":[
+  {"date": "1916-02", "type": "breakthrough", "ja": "『鼻』が夏目漱石に激賞される", "en": "The Nose wins lavish praise from Natsume Sōseki"}]},
+{"id":"misuzu","wiki":"Misuzu Kaneko","ja":"金子みすゞ","en":"Misuzu Kaneko","born":"1903-04-11","died":"1930-03-10","field":"literature","country":"JP",
+ "desc_ja":"「みんなちがって、みんないい」で知られる童謡詩人","desc_en":"Children's poet known for the line 'all different, all good'",
+ "milestones":[
+  {"date": "1923", "type": "debut", "ja": "童謡詩が雑誌に一斉に掲載され、西條八十に称賛される", "en": "Her children's verse appears in magazines and is praised by Saijō Yaso"}]},
+{"id":"pascal","wiki":"Blaise Pascal","ja":"ブレーズ・パスカル","en":"Blaise Pascal","born":"1623-06-19","died":"1662-08-19","field":"science","country":"FR",
+ "desc_ja":"パスカルの原理、確率論、『パンセ』を残した数学者・哲学者","desc_en":"Mathematician and philosopher: Pascal's law, probability theory, the Pensées",
+ "milestones":[
+  {"date": "1640-02", "type": "masterpiece", "ja": "16歳で『円錐曲線試論』を発表", "en": "Publishes his Essay on Conics at 16"},
+  {"date": "1642", "type": "breakthrough", "ja": "機械式計算機（パスカリーヌ）を発明", "en": "Invents a mechanical calculator, the Pascaline"}]},
+{"id":"ebronte","wiki":"Emily Brontë","ja":"エミリー・ブロンテ","en":"Emily Brontë","born":"1818-07-30","died":"1848-12-19","field":"literature","country":"GB",
+ "desc_ja":"『嵐が丘』一作で英文学史に名を刻んだ作家","desc_en":"Novelist who secured her place with a single book, Wuthering Heights",
+ "milestones":[
+  {"date": "1847-12", "type": "masterpiece", "ja": "唯一の小説『嵐が丘』刊行", "en": "Publishes her only novel, Wuthering Heights"}]},
+{"id":"chopin","wiki":"Frédéric Chopin","ja":"フレデリック・ショパン","en":"Frédéric Chopin","born":"1810-03-01","died":"1849-10-17","field":"arts","country":"PL",
+ "desc_ja":"「ピアノの詩人」と呼ばれたポーランドの作曲家","desc_en":"Polish composer known as the poet of the piano",
+ "milestones":[
+  {"date": "1832-02-26", "type": "debut", "ja": "パリでデビュー演奏会を開く", "en": "Gives his Paris debut concert", "kind": "turning"}]},
+{"id":"mendelssohn","wiki":"Felix Mendelssohn","ja":"フェリックス・メンデルスゾーン","en":"Felix Mendelssohn","born":"1809-02-03","died":"1847-11-04","field":"arts","country":"DE",
+ "desc_ja":"忘れられていたバッハの音楽を復興させたドイツの作曲家","desc_en":"German composer who revived the forgotten music of Bach",
+ "milestones":[
+  {"date": "1826-08", "type": "masterpiece", "ja": "17歳で『真夏の夜の夢』序曲を作曲", "en": "Writes the Midsummer Night's Dream overture at seventeen"}]},
+{"id":"seurat","wiki":"Georges Seurat","ja":"ジョルジュ・スーラ","en":"Georges Seurat","born":"1859-12-02","died":"1891-03-29","field":"arts","country":"FR",
+ "desc_ja":"点描法を創始した新印象派の画家","desc_en":"Painter who founded pointillism",
+ "milestones":[
+  {"date": "1886", "type": "masterpiece", "ja": "『グランド・ジャット島の日曜日の午後』発表", "en": "Exhibits A Sunday Afternoon on the Island of La Grande Jatte"}]},
+{"id":"hertz","wiki":"Heinrich Hertz","ja":"ハインリヒ・ヘルツ","en":"Heinrich Hertz","born":"1857-02-22","died":"1894-01-01","field":"science","country":"DE",
+ "desc_ja":"電磁波の存在を初めて実証した物理学者。周波数の単位に名を残す","desc_en":"Physicist who first proved electromagnetic waves exist; the unit of frequency is named for him",
+ "milestones":[
+  {"date": "1887", "type": "breakthrough", "ja": "電磁波の存在を実証", "en": "Demonstrates the existence of electromagnetic waves"}]},
+{"id":"ramsey","wiki":"Frank P. Ramsey","ja":"フランク・ラムゼイ","en":"Frank Ramsey","born":"1903-02-22","died":"1930-01-19","field":"science","country":"GB",
+ "desc_ja":"26年の生涯で数学・経済学・哲学に基礎的な業績を残した英国の天才","desc_en":"British prodigy who left foundational work in mathematics, economics and philosophy",
+ "milestones":[
+  {"date": "1928", "type": "breakthrough", "ja": "ラムゼー理論と最適貯蓄の論文を発表", "en": "Papers founding Ramsey theory and optimal saving"}]},
+{"id":"holly","wiki":"Buddy Holly","ja":"バディ・ホリー","en":"Buddy Holly","born":"1936-09-07","died":"1959-02-03","field":"arts","country":"US",
+ "desc_ja":"ビートルズらに影響を与えたロックンロール初期の旗手","desc_en":"Early rock 'n' roll pioneer who shaped the Beatles and many more",
+ "milestones":[
+  {"date": "1957", "type": "breakthrough", "ja": "『ザットル・ビー・ザ・デイ』が全米1位", "en": "'That'll Be the Day' hits number one"}]},
+{"id":"senna","wiki":"Ayrton Senna","ja":"アイルトン・セナ","en":"Ayrton Senna","born":"1960-03-21","died":"1994-05-01","field":"sports","country":"BR",
+ "desc_ja":"F1で3度世界王者となったブラジルのレーサー","desc_en":"Brazilian racer and three-time Formula One world champion",
+ "milestones":[
+  {"date": "1988-10-30", "type": "award", "ja": "F1で初の世界王者に（鈴鹿）", "en": "Clinches his first F1 world title at Suzuka"}]},
+{"id":"mlk","wiki":"Martin Luther King Jr.","ja":"キング牧師","en":"Martin Luther King Jr.","born":"1929-01-15","died":"1968-04-04","field":"politics","country":"US",
+ "desc_ja":"非暴力で米国の公民権運動を率いた牧師","desc_en":"Minister who led the US civil rights movement through nonviolence",
+ "milestones":[
+  {"date": "1963-08-28", "type": "breakthrough", "ja": "「私には夢がある」の演説を行う", "en": "Delivers the 'I Have a Dream' speech"},
+  {"date": "1964-12-10", "type": "award", "ja": "史上最年少（当時）でノーベル平和賞", "en": "Becomes the youngest Nobel Peace laureate to that date"}]},
+{"id":"plath","wiki":"Sylvia Plath","ja":"シルヴィア・プラス","en":"Sylvia Plath","born":"1932-10-27","died":"1963-02-11","field":"literature","country":"US",
+ "desc_ja":"告白詩の旗手となった米国の詩人・作家","desc_en":"American poet and novelist, a leading voice of confessional poetry",
+ "milestones":[
+  {"date": "1963-01-14", "type": "masterpiece", "ja": "『ベル・ジャー』刊行", "en": "The Bell Jar is published"}]},
+{"id":"lennon","wiki":"John Lennon","ja":"ジョン・レノン","en":"John Lennon","born":"1940-10-09","died":"1980-12-08","field":"arts","country":"GB",
+ "desc_ja":"ビートルズの中心メンバー。平和を歌い続けた","desc_en":"Founding Beatle who kept singing for peace",
+ "milestones":[
+  {"date": "1957-07-06", "type": "turning", "ja": "ポール・マッカートニーと出会う", "en": "Meets Paul McCartney"},
+  {"date": "1971-10-11", "type": "masterpiece", "ja": "『イマジン』発表", "en": "Releases 'Imagine'"}]},
+{"id":"turing","wiki":"Alan Turing","ja":"アラン・チューリング","en":"Alan Turing","born":"1912-06-23","died":"1954-06-07","field":"science","country":"GB",
+ "desc_ja":"コンピュータ科学の父。エニグマ暗号の解読に貢献した","desc_en":"Father of computer science who helped break the Enigma code",
+ "milestones":[
+  {"date": "1936-11", "type": "breakthrough", "ja": "24歳で計算機の理論モデル（チューリングマシン）を発表", "en": "Describes the Turing machine at twenty-four"},
+  {"date": "1940", "type": "turning", "ja": "ブレッチリー・パークでエニグマ解読機を設計", "en": "Designs the Bombe to break Enigma at Bletchley Park", "kind": "bloom"}]},
+{"id":"sanders","wiki":"Colonel Sanders","ja":"カーネル・サンダース","en":"Colonel Sanders","born":"1890-09-09","died":"1980-12-16","field":"business","country":"US",
+ "desc_ja":"ケンタッキーフライドチキン（KFC）の創業者","desc_en":"Founder of Kentucky Fried Chicken",
+ "milestones":[
+  {"date": "1952", "age": 61, "type": "founding", "ja": "ソルトレイクシティで初のフランチャイズ契約", "en": "Signs his first franchise in Salt Lake City"},
+  {"date": "1956", "age": 65, "type": "turning", "ja": "店を失い、年金の小切手を元手にフランチャイズ行脚へ", "en": "Loses his restaurant and sets out to sell franchises on his pension check"},
+  {"date": "1964", "age": 73, "type": "breakthrough", "ja": "600店超に育てたKFCを売却", "en": "Sells KFC after growing it past 600 outlets"}]},
+{"id":"kroc","wiki":"Ray Kroc","ja":"レイ・クロック","en":"Ray Kroc","born":"1902-10-05","died":"1984-01-14","field":"business","country":"US",
+ "desc_ja":"マクドナルドを世界的チェーンに育てた実業家","desc_en":"Businessman who turned McDonald's into a global chain",
+ "milestones":[
+  {"date": "1954", "type": "turning", "ja": "ミルクシェイク機の営業でマクドナルド兄弟と出会う", "en": "Meets the McDonald brothers while selling milkshake mixers"},
+  {"date": "1955-04-15", "type": "founding", "ja": "マクドナルドのフランチャイズ1号店を開業", "en": "Opens his first McDonald's franchise"}]},
+{"id":"moses","wiki":"Grandma Moses","ja":"グランマ・モーゼス","en":"Grandma Moses","born":"1860-09-07","died":"1961-12-13","field":"arts","country":"US",
+ "desc_ja":"70代後半で絵筆を取り、米国の国民的画家となった","desc_en":"Took up painting in her late seventies and became a beloved American artist",
+ "milestones":[
+  {"date": "1938", "age": 78, "type": "debut", "ja": "78歳で本格的に絵を描き始める", "en": "Takes up painting in earnest at 78", "kind": "turning"},
+  {"date": "1940-10", "type": "breakthrough", "ja": "80歳でニューヨーク初個展", "en": "First solo show in New York at 80"}]},
+{"id":"ino","wiki":"Inō Tadataka","ja":"伊能忠敬","en":"Inō Tadataka","born":"1745-02-11","died":"1818-05-17","field":"science","country":"JP",
+ "desc_ja":"隠居後に天文学と測量を学び、初の実測日本地図を作った","desc_en":"Learned astronomy and surveying after retiring, then made the first measured map of Japan",
+ "milestones":[
+  {"date": "1795", "age": 50, "type": "turning", "ja": "隠居後、江戸で親子ほど年の離れた天文学者・高橋至時に弟子入り", "en": "Retires and becomes the pupil of an astronomer young enough to be his son"},
+  {"date": "1800", "age": 55, "type": "debut", "ja": "55歳で蝦夷地の測量に出発。以後17年で日本全国を歩く", "en": "At 55 sets out to survey Ezo — and walks all of Japan over 17 years", "kind": "turning"}]},
+{"id":"wilder","wiki":"Laura Ingalls Wilder","ja":"ローラ・インガルス・ワイルダー","en":"Laura Ingalls Wilder","born":"1867-02-07","died":"1957-02-10","field":"literature","country":"US",
+ "desc_ja":"『大草原の小さな家』シリーズの作者","desc_en":"Author of the Little House books",
+ "milestones":[
+  {"date": "1932", "age": 65, "type": "debut", "ja": "65歳で『大きな森の小さな家』刊行", "en": "Publishes Little House in the Big Woods at 65"}]},
+{"id":"child","wiki":"Julia Child","ja":"ジュリア・チャイルド","en":"Julia Child","born":"1912-08-15","died":"2004-08-13","field":"other","country":"US",
+ "desc_ja":"フランス料理をアメリカの家庭に広めた料理研究家","desc_en":"Cook who brought French cuisine into American homes",
+ "milestones":[
+  {"date": "1949-10", "type": "turning", "ja": "37歳でル・コルドン・ブルーに入学", "en": "Enrolls at Le Cordon Bleu at 37"},
+  {"date": "1961", "type": "masterpiece", "ja": "『フランス料理の技法をマスターする』刊行", "en": "Publishes Mastering the Art of French Cooking"},
+  {"date": "1963-02-11", "type": "breakthrough", "ja": "50歳で料理番組『フレンチ・シェフ』開始", "en": "The French Chef debuts on TV when she is 50"}]},
+{"id":"rousseau","wiki":"Henri Rousseau","ja":"アンリ・ルソー","en":"Henri Rousseau","born":"1844-05-21","died":"1910-09-02","field":"arts","country":"FR",
+ "desc_ja":"税関吏から転身し、独学で描いた素朴派の画家","desc_en":"Self-taught naïve painter who started out as a customs clerk",
+ "milestones":[
+  {"date": "1893", "type": "turning", "ja": "税関を退職し、画業に専念", "en": "Retires from the customs office to paint full-time"},
+  {"date": "1897", "type": "masterpiece", "ja": "『眠るジプシー女』を描く", "en": "Paints The Sleeping Gypsy"}]},
+{"id":"ando","wiki":"Momofuku Ando","ja":"安藤百福","en":"Momofuku Ando","born":"1910-03-05","died":"2007-01-05","field":"business","country":"JP",
+ "desc_ja":"インスタントラーメンを発明した日清食品の創業者","desc_en":"Founder of Nissin and inventor of instant noodles",
+ "milestones":[
+  {"date": "1958-08-25", "type": "founding", "ja": "全財産を失った後、48歳でチキンラーメンを発売", "en": "Having lost everything, launches Chicken Ramen at 48", "kind": "bloom"},
+  {"date": "1971-09-18", "type": "breakthrough", "ja": "61歳でカップヌードルを発売", "en": "Launches Cup Noodles at 61"}]},
+{"id":"mccourt","wiki":"Frank McCourt","ja":"フランク・マコート","en":"Frank McCourt","born":"1930-08-19","died":"2009-07-19","field":"literature","country":"US",
+ "desc_ja":"回想録『アンジェラの灰』でピュリッツァー賞を受けた元高校教師","desc_en":"Retired high-school teacher whose memoir Angela's Ashes won the Pulitzer",
+ "milestones":[
+  {"date": "1996-09-05", "type": "debut", "ja": "教師を退職後、66歳で『アンジェラの灰』刊行", "en": "A retired teacher, publishes Angela's Ashes at 66"},
+  {"date": "1997-04-07", "type": "award", "ja": "ピュリッツァー賞受賞", "en": "Wins the Pulitzer Prize"}]},
+{"id":"defoe","wiki":"Daniel Defoe","ja":"ダニエル・デフォー","en":"Daniel Defoe","born":"1660-09-13","died":"1731-04-24","approx":true,"field":"literature","country":"GB",
+ "desc_ja":"『ロビンソン・クルーソー』で英国小説の祖となった作家","desc_en":"Writer whose Robinson Crusoe helped found the English novel",
+ "milestones":[
+  {"date": "1719-04-25", "type": "masterpiece", "ja": "59歳頃、初の小説『ロビンソン・クルーソー』を刊行", "en": "Publishes his first novel, Robinson Crusoe, at about 59"}]},
+{"id":"sewell","wiki":"Anna Sewell","ja":"アンナ・シューウェル","en":"Anna Sewell","born":"1820-03-30","died":"1878-04-25","field":"literature","country":"GB",
+ "desc_ja":"動物愛護の古典『黒馬物語』の作者","desc_en":"Author of the animal-welfare classic Black Beauty",
+ "milestones":[
+  {"date": "1877-11-24", "type": "debut", "ja": "57歳で生涯唯一の作品『黒馬物語』を刊行", "en": "Publishes her only book, Black Beauty, at 57"}]},
+{"id":"chandler","wiki":"Raymond Chandler","ja":"レイモンド・チャンドラー","en":"Raymond Chandler","born":"1888-07-23","died":"1959-03-26","field":"literature","country":"US",
+ "desc_ja":"探偵フィリップ・マーロウを生んだハードボイルド作家","desc_en":"Hard-boiled novelist who created Philip Marlowe",
+ "milestones":[
+  {"date": "1932", "type": "turning", "ja": "石油会社を解雇され、作家を志す", "en": "Fired from an oil company, turns to writing"},
+  {"date": "1939-02-06", "type": "debut", "ja": "50歳で初の長編『大いなる眠り』を刊行", "en": "Publishes his first novel, The Big Sleep, at 50"}]},
+{"id":"darwin","wiki":"Charles Darwin","ja":"チャールズ・ダーウィン","en":"Charles Darwin","born":"1809-02-12","died":"1882-04-19","field":"science","country":"GB",
+ "desc_ja":"自然選択による進化論を提唱した博物学者","desc_en":"Naturalist who proposed evolution by natural selection",
+ "milestones":[
+  {"date": "1831-12-27", "type": "turning", "ja": "22歳でビーグル号の航海へ", "en": "Sails on HMS Beagle at 22"},
+  {"date": "1859-11-24", "type": "masterpiece", "ja": "50歳で『種の起源』刊行", "en": "Publishes On the Origin of Species at 50"}]},
+{"id":"kant","wiki":"Immanuel Kant","ja":"イマヌエル・カント","en":"Immanuel Kant","born":"1724-04-22","died":"1804-02-12","field":"literature","country":"DE",
+ "desc_ja":"『純粋理性批判』で近代哲学を転換させた哲学者","desc_en":"Philosopher whose Critique of Pure Reason transformed modern thought",
+ "milestones":[
+  {"date": "1770-03-31", "type": "turning", "ja": "45歳でようやく正教授に", "en": "Finally becomes a full professor at 45"},
+  {"date": "1781-05", "type": "masterpiece", "ja": "57歳で『純粋理性批判』を刊行", "en": "Publishes the Critique of Pure Reason at 57"}]},
+{"id":"ford","wiki":"Henry Ford","ja":"ヘンリー・フォード","en":"Henry Ford","born":"1863-07-30","died":"1947-04-07","field":"business","country":"US",
+ "desc_ja":"大量生産で自動車を大衆のものにした実業家","desc_en":"Industrialist whose mass production put cars within everyone's reach",
+ "milestones":[
+  {"date": "1903-06-16", "type": "founding", "ja": "2度の失敗を経てフォード・モーター設立", "en": "Founds Ford Motor Company after two failed ventures"},
+  {"date": "1908-10-01", "type": "breakthrough", "ja": "T型フォード発売", "en": "Launches the Model T"}]},
+{"id":"walton","wiki":"Sam Walton","ja":"サム・ウォルトン","en":"Sam Walton","born":"1918-03-29","died":"1992-04-05","field":"business","country":"US",
+ "desc_ja":"ウォルマートを創業し、世界最大の小売業に育てた","desc_en":"Founder of Walmart, the world's largest retailer",
+ "milestones":[
+  {"date": "1962-07-02", "type": "founding", "ja": "44歳でウォルマート1号店を開業", "en": "Opens the first Walmart at 44"}]},
+{"id":"honda","wiki":"Soichiro Honda","ja":"本田宗一郎","en":"Soichiro Honda","born":"1906-11-17","died":"1991-08-05","field":"business","country":"JP",
+ "desc_ja":"町工場から本田技研を世界的メーカーに育てた技術者・経営者","desc_en":"Engineer who grew Honda from a small workshop into a global maker",
+ "milestones":[
+  {"date": "1948-09-24", "type": "founding", "ja": "41歳で本田技研工業を設立", "en": "Founds Honda Motor at 41"}]},
+{"id":"teresa","wiki":"Mother Teresa","ja":"マザー・テレサ","en":"Mother Teresa","born":"1910-08-26","died":"1997-09-05","field":"politics","country":"IN",
+ "desc_ja":"コルカタで貧しい人々への奉仕に生涯を捧げた修道女","desc_en":"Nun who devoted her life to the poorest people of Kolkata",
+ "milestones":[
+  {"date": "1950-10-07", "type": "founding", "ja": "40歳で「神の愛の宣教者会」を設立", "en": "Founds the Missionaries of Charity at 40"},
+  {"date": "1979-12-10", "type": "award", "ja": "ノーベル平和賞", "en": "Awarded the Nobel Peace Prize"}]},
+{"id":"mandela","wiki":"Nelson Mandela","ja":"ネルソン・マンデラ","en":"Nelson Mandela","born":"1918-07-18","died":"2013-12-05","field":"politics","country":"ZA",
+ "desc_ja":"アパルトヘイトと闘い、南アフリカ初の黒人大統領となった","desc_en":"Anti-apartheid leader who became South Africa's first Black president",
+ "milestones":[
+  {"date": "1990-02-11", "type": "turning", "ja": "27年の投獄を経て71歳で釈放", "en": "Released at 71 after 27 years in prison"},
+  {"date": "1994-05-10", "type": "breakthrough", "ja": "75歳で南アフリカ大統領に就任", "en": "Inaugurated as president of South Africa at 75"}]},
+{"id":"reagan","wiki":"Ronald Reagan","ja":"ロナルド・レーガン","en":"Ronald Reagan","born":"1911-02-06","died":"2004-06-05","field":"politics","country":"US",
+ "desc_ja":"俳優出身の第40代アメリカ大統領","desc_en":"Actor turned 40th president of the United States",
+ "milestones":[
+  {"date": "1967-01-02", "type": "turning", "ja": "俳優から転じ、55歳でカリフォルニア州知事に", "en": "Former actor becomes governor of California at 55"},
+  {"date": "1981-01-20", "type": "breakthrough", "ja": "69歳で大統領に就任", "en": "Inaugurated as president at 69"}]},
+{"id":"churchill","wiki":"Winston Churchill","ja":"ウィンストン・チャーチル","en":"Winston Churchill","born":"1874-11-30","died":"1965-01-24","field":"politics","country":"GB",
+ "desc_ja":"第二次世界大戦で英国を率いた首相","desc_en":"Prime minister who led Britain through the Second World War",
+ "milestones":[
+  {"date": "1940-05-10", "type": "breakthrough", "ja": "「荒野の10年」を経て65歳で首相に", "en": "After his 'wilderness years', becomes prime minister at 65"},
+  {"date": "1953-12-10", "type": "award", "ja": "79歳でノーベル文学賞", "en": "Wins the Nobel Prize in Literature at 79"}]},
+{"id":"goodenough","wiki":"John B. Goodenough","ja":"ジョン・グッドイナフ","en":"John B. Goodenough","born":"1922-07-25","died":"2023-06-25","field":"science","country":"US",
+ "desc_ja":"リチウムイオン電池の実用化を可能にした物理学者","desc_en":"Physicist whose cathode made lithium-ion batteries practical",
+ "milestones":[
+  {"date": "1980", "type": "breakthrough", "ja": "リチウムイオン電池の正極材料（コバルト酸リチウム）を発見", "en": "Discovers the lithium cobalt oxide cathode"},
+  {"date": "2019-12-10", "type": "award", "ja": "97歳、史上最高齢でノーベル化学賞", "en": "At 97, the oldest-ever Nobel laureate (Chemistry)"}]},
+{"id":"roget","wiki":"Peter Mark Roget","ja":"ピーター・マーク・ロジェ","en":"Peter Mark Roget","born":"1779-01-18","died":"1869-09-12","field":"science","country":"GB",
+ "desc_ja":"類語辞典の代名詞『ロジェのシソーラス』を編んだ医師","desc_en":"Physician who compiled Roget's Thesaurus",
+ "milestones":[
+  {"date": "1852-04-29", "type": "masterpiece", "ja": "73歳で『ロジェのシソーラス』刊行", "en": "Publishes Roget's Thesaurus at 73"}]},
+{"id":"hokusai","wiki":"Hokusai","ja":"葛飾北斎","en":"Katsushika Hokusai","born":"1760-10-31","died":"1849-05-10","approx":true,"field":"arts","country":"JP",
+ "desc_ja":"『冨嶽三十六景』で世界の画家に影響を与えた浮世絵師","desc_en":"Ukiyo-e master whose Mount Fuji prints influenced artists worldwide",
+ "milestones":[
+  {"date": "1831", "type": "masterpiece", "ja": "『冨嶽三十六景』の刊行を始める", "en": "Begins publishing Thirty-six Views of Mount Fuji"},
+  {"date": "1834", "type": "masterpiece", "ja": "『富嶽百景』初編を刊行。跋文に「七十歳前に描いたものは取るに足らない」と記す", "en": "Publishes the first volume of One Hundred Views of Mount Fuji, writing that nothing he drew before seventy was worth noticing"}]},
+{"id":"tolkien","wiki":"J. R. R. Tolkien","ja":"J・R・R・トールキン","en":"J. R. R. Tolkien","born":"1892-01-03","died":"1973-09-02","field":"literature","country":"GB",
+ "desc_ja":"『指輪物語』で現代ファンタジー文学の礎を築いた作家","desc_en":"Author of The Lord of the Rings and a founder of modern fantasy",
+ "milestones":[
+  {"date": "1937-09-21", "type": "debut", "ja": "45歳で『ホビットの冒険』を刊行", "en": "Publishes The Hobbit at 45"},
+  {"date": "1954-07-29", "type": "masterpiece", "ja": "62歳で『指輪物語』の刊行が始まる", "en": "The Lord of the Rings begins publication when he is 62"}]},
+{"id":"janacek","wiki":"Leoš Janáček","ja":"レオシュ・ヤナーチェク","en":"Leoš Janáček","born":"1854-07-03","died":"1928-08-12","field":"arts","country":"CZ",
+ "desc_ja":"モラヴィアの民族音楽を生かしたチェコの作曲家","desc_en":"Czech composer rooted in Moravian folk music",
+ "milestones":[
+  {"date": "1916-05-26", "type": "breakthrough", "ja": "61歳、プラハでの『イェヌーファ』上演で遅すぎた成功", "en": "At 61, Jenůfa's Prague staging brings belated fame"}]},
+{"id":"bruckner","wiki":"Anton Bruckner","ja":"アントン・ブルックナー","en":"Anton Bruckner","born":"1824-09-04","died":"1896-10-11","field":"arts","country":"AT",
+ "desc_ja":"壮大な交響曲で知られるオーストリアの作曲家","desc_en":"Austrian composer of monumental symphonies",
+ "milestones":[
+  {"date": "1884-12-30", "type": "breakthrough", "ja": "60歳、交響曲第7番の初演で初めて大成功", "en": "At 60, the premiere of his Seventh Symphony is his first triumph"}]},
+{"id":"freeman","wiki":"Morgan Freeman","ja":"モーガン・フリーマン","en":"Morgan Freeman","born":"1937-06-01","died":null,"field":"arts","country":"US",
+ "desc_ja":"50歳前後で頭角を現し、アカデミー賞を受けた俳優","desc_en":"Actor who broke through near 50 and later won an Oscar",
+ "milestones":[
+  {"date": "1988-02-17", "type": "breakthrough", "ja": "50歳で『NYストリート・スマート』により初のアカデミー賞候補", "en": "Earns his first Oscar nomination at 50 for Street Smart"}]},
+{"id":"wang","wiki":"Vera Wang","ja":"ヴェラ・ウォン","en":"Vera Wang","born":"1949-06-27","died":null,"field":"business","country":"US",
+ "desc_ja":"元フィギュアスケーター・編集者から40歳で転身したウェディングドレスの第一人者","desc_en":"Former skater and fashion editor who became the leading bridal designer at 40",
+ "milestones":[
+  {"date": "1990", "type": "founding", "ja": "ブライダルブティックを開業", "en": "Opens her bridal boutique"}]},
+{"id":"wakamiya","wiki":"Masako Wakamiya","ja":"若宮正子","en":"Masako Wakamiya","born":"1935-04-19","died":null,"field":"science","country":"JP",
+ "desc_ja":"80代でアプリを開発した「世界最高齢のプログラマー」","desc_en":"Known as the world's oldest app developer, coding in her eighties","verified":"日本語版Wikipedia: 1935-04-19生、2017年に81歳でhinadan公開（Wikidata未登録）",
+ "milestones":[
+  {"date": "1995", "type": "turning", "ja": "60歳で初めてパソコンを買う", "en": "Buys her first computer at 60", "age": 60},
+  {"date": "2017-02", "type": "debut", "ja": "81歳でiPhoneアプリ「hinadan」を公開", "en": "Releases her iPhone game hinadan at 81"}]},
+{"id":"seicho","wiki":"Seichō Matsumoto","ja":"松本清張","en":"Seichō Matsumoto","born":"1909-12-21","died":"1992-08-04","field":"literature","country":"JP",
+ "desc_ja":"『点と線』『砂の器』で社会派推理小説を確立した作家","desc_en":"Author of Points and Lines who created Japan's social mystery genre",
+ "milestones":[
+  {"date": "1953-01", "type": "award", "ja": "43歳で芥川賞", "en": "Wins the Akutagawa Prize at 43"},
+  {"date": "1958-02", "type": "masterpiece", "ja": "48歳で『点と線』。社会派推理ブームを起こす", "en": "Points and Lines at 48 launches a mystery boom"}]},
+{"id":"soseki","wiki":"Natsume Sōseki","ja":"夏目漱石","en":"Natsume Sōseki","born":"1867-02-09","died":"1916-12-09","field":"literature","country":"JP",
+ "desc_ja":"『吾輩は猫である』『こころ』の作者。近代日本文学の巨人","desc_en":"Author of I Am a Cat and Kokoro, a giant of modern Japanese literature",
+ "milestones":[
+  {"date": "1905-01", "type": "debut", "ja": "37歳で『吾輩は猫である』を発表", "en": "Debuts with I Am a Cat at 37"},
+  {"date": "1907-04", "type": "turning", "ja": "教職を辞し、朝日新聞の専属作家に", "en": "Quits teaching to write full-time for the Asahi"}]},
+{"id":"einstein","wiki":"Albert Einstein","ja":"アルベルト・アインシュタイン","en":"Albert Einstein","born":"1879-03-14","died":"1955-04-18","field":"science","country":"DE",
+ "desc_ja":"相対性理論を築いた20世紀を代表する物理学者","desc_en":"Physicist who created the theory of relativity",
+ "milestones":[
+  {"date": "1905-06-30", "type": "breakthrough", "ja": "特許局員のまま「奇跡の年」の論文群（特殊相対性理論ほか）を発表", "en": "While a patent clerk, publishes his 'miracle year' papers, including special relativity"},
+  {"date": "1915-11-25", "type": "masterpiece", "ja": "一般相対性理論を完成", "en": "Completes general relativity"}]},
+{"id":"newton","wiki":"Isaac Newton","ja":"アイザック・ニュートン","en":"Isaac Newton","born":"1643-01-04","died":"1727-03-31","field":"science","country":"GB",
+ "desc_ja":"万有引力と微積分で近代科学の基礎を築いた","desc_en":"Laid the foundations of modern science with gravitation and calculus",
+ "milestones":[
+  {"date": "1666", "type": "breakthrough", "ja": "ペストで帰郷中の「驚異の年」に、微積分と万有引力を着想", "en": "During the plague year at home, conceives calculus and gravitation"},
+  {"date": "1687-07-05", "type": "masterpiece", "ja": "44歳で『プリンキピア』を刊行", "en": "Publishes the Principia at 44"}]},
+{"id":"jobs","wiki":"Steve Jobs","ja":"スティーブ・ジョブズ","en":"Steve Jobs","born":"1955-02-24","died":"2011-10-05","field":"business","country":"US",
+ "desc_ja":"アップルの共同創業者。Mac、iPhoneを世に出した","desc_en":"Apple co-founder who launched the Mac and the iPhone",
+ "milestones":[
+  {"date": "1976-04-01", "type": "founding", "ja": "21歳でアップルを創業", "en": "Co-founds Apple at 21"},
+  {"date": "1985-09-17", "type": "turning", "ja": "30歳、自ら創った会社を追われる", "en": "At 30, forced out of the company he founded"},
+  {"date": "2007-01-09", "type": "breakthrough", "ja": "51歳でiPhoneを発表", "en": "Unveils the iPhone at 51"}]},
+{"id":"curie","wiki":"Marie Curie","ja":"マリ・キュリー","en":"Marie Curie","born":"1867-11-07","died":"1934-07-04","field":"science","country":"PL",
+ "desc_ja":"放射能研究の先駆者。物理学・化学の2分野でノーベル賞を受けた","desc_en":"Radioactivity pioneer, Nobel laureate in both physics and chemistry",
+ "milestones":[
+  {"date": "1891", "type": "turning", "ja": "パリに渡り、ソルボンヌで学ぶ", "en": "Moves to Paris to study at the Sorbonne"},
+  {"date": "1903-12-10", "type": "award", "ja": "女性初のノーベル賞（物理学）を受賞", "en": "First woman to win a Nobel Prize (Physics)"},
+  {"date": "1911-12-10", "type": "award", "ja": "2度目のノーベル賞（化学）を受賞", "en": "Wins a second Nobel Prize (Chemistry)"}]},
+{"id":"davinci","wiki":"Leonardo da Vinci","ja":"レオナルド・ダ・ヴィンチ","en":"Leonardo da Vinci","born":"1452-04-15","died":"1519-05-02","field":"arts","country":"IT",
+ "desc_ja":"『モナ・リザ』を描き、科学・工学にも通じた万能の天才","desc_en":"Painter of the Mona Lisa and universal genius of science and engineering",
+ "milestones":[
+  {"date": "1498", "type": "masterpiece", "ja": "『最後の晩餐』完成", "en": "Completes The Last Supper"},
+  {"date": "1503", "type": "masterpiece", "ja": "51歳頃『モナ・リザ』に着手", "en": "Begins the Mona Lisa around 51"}]},
+{"id":"tadao","wiki":"Tadao Ando","ja":"安藤忠雄","en":"Tadao Ando","born":"1941-09-13","died":null,"field":"arts","country":"JP",
+ "desc_ja":"独学で建築を学び、「光の教会」などで世界的建築家となった","desc_en":"Self-taught architect of the Church of the Light",
+ "milestones":[
+  {"date": "1969", "type": "founding", "ja": "独学のまま大阪に事務所を開設", "en": "Self-taught, opens his own office in Osaka"},
+  {"date": "1995", "type": "award", "ja": "プリツカー賞受賞", "en": "Receives the Pritzker Prize"}]},
+{"id":"miyazaki","wiki":"Hayao Miyazaki","ja":"宮崎駿","en":"Hayao Miyazaki","born":"1941-01-05","died":null,"field":"arts","country":"JP",
+ "desc_ja":"『千と千尋の神隠し』でアカデミー賞を受けたアニメーション監督","desc_en":"Animation director whose Spirited Away won an Oscar",
+ "milestones":[
+  {"date": "1979-12-15", "type": "debut", "ja": "38歳で初の長編監督作『ルパン三世 カリオストロの城』を公開", "en": "Directs his first feature, The Castle of Cagliostro, at 38"},
+  {"date": "2001-07-20", "type": "masterpiece", "ja": "60歳で『千と千尋の神隠し』を公開", "en": "Releases Spirited Away at 60"}]},
+{"id":"kitano","wiki":"Takeshi Kitano","ja":"北野武","en":"Takeshi Kitano","born":"1947-01-18","died":null,"field":"arts","country":"JP",
+ "desc_ja":"漫才師から転身し、世界的な映画監督となった","desc_en":"Comedian who became an internationally acclaimed film director",
+ "milestones":[
+  {"date": "1989-08-12", "type": "debut", "ja": "42歳で『その男、凶暴につき』を撮り、映画監督デビュー", "en": "Directs his first film, Violent Cop, at 42"},
+  {"date": "1997-09-06", "type": "award", "ja": "『HANA-BI』でヴェネツィア金獅子賞", "en": "Wins the Golden Lion in Venice for Hana-bi"}]},
+{"id":"miura","wiki":"Yūichirō Miura","ja":"三浦雄一郎","en":"Yuichiro Miura","born":"1932-10-12","died":null,"field":"sports","country":"JP",
+ "desc_ja":"プロスキーヤー・冒険家。80歳でエベレストに登頂した","desc_en":"Pro skier and adventurer who climbed Everest at 80","verified":"Wikidata の生年(1933)は誤り。日本語版Wikipedia・本人の公式情報とも1932-10-12（2013年に80歳でエベレスト）",
+ "milestones":[
+  {"date": "2003-05-22", "type": "breakthrough", "ja": "70歳でエベレスト登頂（当時の最高齢）", "en": "Summits Everest at 70, then the oldest ever"},
+  {"date": "2013-05-23", "type": "breakthrough", "ja": "80歳で3度目のエベレスト登頂", "en": "Summits Everest a third time, at 80"}]},
+{"id":"gehrig","wiki":"Lou Gehrig","ja":"ルー・ゲーリッグ","en":"Lou Gehrig","born":"1903-06-19","died":"1941-06-02","field":"sports","country":"US",
+ "desc_ja":"2130試合連続出場を打ち立てたヤンキースの一塁手。難病ALSで早世した","desc_en":"Yankees first baseman who played 2,130 consecutive games before ALS cut his life short",
+ "milestones":[
+  {"date": "1925-06-01", "type": "debut", "ja": "連続試合出場が始まる", "en": "Begins his consecutive-games streak", "kind": "turning"},
+  {"date": "1939-07-04", "type": "turning", "ja": "引退式で「私は地上で最も幸運な男」と語る", "en": "Tells Yankee Stadium he is 'the luckiest man on the face of the earth'"}]},
+{"id":"clemente","wiki":"Roberto Clemente","ja":"ロベルト・クレメンテ","en":"Roberto Clemente","born":"1934-08-18","died":"1972-12-31","field":"sports","country":"PR",
+ "desc_ja":"3000本安打を達成したプエルトリコ出身の外野手。被災地へ救援物資を届ける途中の事故で没した","desc_en":"Puerto Rican outfielder with 3,000 hits who died flying relief supplies to earthquake victims",
+ "milestones":[
+  {"date": "1955-04-17", "type": "debut", "ja": "パイレーツでメジャーデビュー", "en": "Makes his major-league debut with Pittsburgh", "kind": "turning"},
+  {"date": "1972-09-30", "type": "breakthrough", "ja": "通算3000本安打を達成", "en": "Collects his 3,000th hit"}]},
+{"id":"kobe","wiki":"Kobe Bryant","ja":"コービー・ブライアント","en":"Kobe Bryant","born":"1978-08-23","died":"2020-01-26","field":"sports","country":"US",
+ "desc_ja":"レイカーズで5度のNBA優勝を果たしたバスケットボール選手","desc_en":"Lakers guard and five-time NBA champion",
+ "milestones":[
+  {"date": "1996-11-03", "type": "debut", "ja": "高校卒業から直接NBAデビュー", "en": "Debuts in the NBA straight out of high school", "kind": "turning"},
+  {"date": "2006-01-22", "type": "breakthrough", "ja": "1試合81得点", "en": "Scores 81 points in a single game"}]},
+{"id":"prefontaine","wiki":"Steve Prefontaine","ja":"スティーブ・プリフォンテーン","en":"Steve Prefontaine","born":"1951-01-25","died":"1975-05-30","field":"sports","country":"US",
+ "desc_ja":"米国の長距離走ブームを牽引したランナー","desc_en":"Runner who ignited America's distance-running boom",
+ "milestones":[
+  {"date": "1972-09-10", "type": "turning", "ja": "ミュンヘン五輪5000mで4位", "en": "Finishes fourth in the 5,000 m at the Munich Olympics"}]},
+{"id":"flojo","wiki":"Florence Griffith Joyner","ja":"フローレンス・ジョイナー","en":"Florence Griffith Joyner","born":"1959-12-21","died":"1998-09-21","field":"sports","country":"US",
+ "desc_ja":"今も破られていない100m・200mの世界記録を持つ陸上選手","desc_en":"Sprinter whose 100 m and 200 m world records still stand",
+ "milestones":[
+  {"date": "1988-07-16", "type": "breakthrough", "ja": "100mで世界記録10秒49", "en": "Runs a 10.49 world record in the 100 m"},
+  {"date": "1988-09-29", "type": "award", "ja": "ソウル五輪200mで世界記録と金メダル", "en": "Wins Olympic 200 m gold in Seoul with a world record"}]},
+{"id":"rindt","wiki":"Jochen Rindt","ja":"ヨッヘン・リント","en":"Jochen Rindt","born":"1942-04-18","died":"1970-09-05","field":"sports","country":"AT",
+ "desc_ja":"F1史上ただ一人、死後に世界王者となったドライバー","desc_en":"The only Formula One driver crowned world champion after his death",
+ "milestones":[
+  {"date": "1969-10-05", "type": "breakthrough", "ja": "アメリカGPでF1初優勝", "en": "Takes his first Formula One win at the US Grand Prix"}]},
+{"id":"petrovic","wiki":"Dražen Petrović","ja":"ドラジェン・ペトロビッチ","en":"Dražen Petrović","born":"1964-10-22","died":"1993-06-07","field":"sports","country":"HR",
+ "desc_ja":"欧州出身選手のNBAへの道を切り開いたクロアチアの名シューター","desc_en":"Croatian sharpshooter who opened the NBA to European players",
+ "milestones":[
+  {"date": "1992-08-08", "type": "award", "ja": "バルセロナ五輪で銀メダル", "en": "Wins Olympic silver in Barcelona"}]},
+{"id":"kiptum","wiki":"Kelvin Kiptum","ja":"ケルビン・キプトゥム","en":"Kelvin Kiptum","born":"1999-12-02","died":"2024-02-11","field":"sports","country":"KE",
+ "desc_ja":"マラソン世界記録2時間0分35秒を樹立したケニアの走者","desc_en":"Kenyan runner who set the marathon world record of 2:00:35",
+ "milestones":[
+  {"date": "2022-12-04", "type": "debut", "ja": "初マラソン（バレンシア）で優勝", "en": "Wins his debut marathon in Valencia"},
+  {"date": "2023-10-08", "type": "breakthrough", "ja": "シカゴで世界記録2時間0分35秒", "en": "Sets the 2:00:35 world record in Chicago"}]},
+{"id":"sawamura","wiki":"Eiji Sawamura","ja":"沢村栄治","en":"Eiji Sawamura","born":"1917-02-01","died":"1944-12-02","field":"sports","country":"JP",
+ "desc_ja":"伝説の剛腕投手。投手最高の栄誉「沢村賞」に名を残す","desc_en":"Legendary pitcher whose name lives on in Japan's top pitching award",
+ "milestones":[
+  {"date": "1934-11-20", "type": "breakthrough", "ja": "17歳、来日したベーブ・ルースらの米国選抜を相手に好投", "en": "At 17, dazzles Babe Ruth's touring American all-stars"}]},
+{"id":"rikidozan","wiki":"Rikidōzan","ja":"力道山","en":"Rikidōzan","born":"1924-11-14","died":"1963-12-15","field":"sports","country":"JP",
+ "desc_ja":"相撲から転じ、戦後日本にプロレスブームを起こしたプロレスラー","desc_en":"Former sumo wrestler who sparked postwar Japan's pro-wrestling boom",
+ "milestones":[
+  {"date": "1954-02-19", "type": "breakthrough", "ja": "シャープ兄弟戦が街頭テレビで中継され国民的英雄に", "en": "His bout with the Sharpe brothers on street-corner TV makes him a national hero"}]},
+{"id":"tsuburaya","wiki":"Kōkichi Tsuburaya","ja":"円谷幸吉","en":"Kōkichi Tsuburaya","born":"1940-05-13","died":"1968-01-09","field":"sports","country":"JP",
+ "desc_ja":"東京五輪マラソンで銅メダルを獲得した陸上選手","desc_en":"Marathoner who won bronze at the 1964 Tokyo Olympics",
+ "milestones":[
+  {"date": "1964-10-21", "type": "award", "ja": "東京五輪マラソンで銅メダル", "en": "Wins marathon bronze at the Tokyo Olympics"}]},
+{"id":"ali","wiki":"Muhammad Ali","ja":"モハメド・アリ","en":"Muhammad Ali","born":"1942-01-17","died":"2016-06-03","field":"sports","country":"US",
+ "desc_ja":"「蝶のように舞い、蜂のように刺す」と称された世界ヘビー級王者","desc_en":"Heavyweight champion who 'floated like a butterfly, stung like a bee'",
+ "milestones":[
+  {"date": "1960-09-05", "type": "award", "ja": "ローマ五輪で金メダル", "en": "Wins Olympic gold in Rome"},
+  {"date": "1964-02-25", "type": "breakthrough", "ja": "22歳で世界ヘビー級王者に", "en": "Becomes world heavyweight champion at 22"},
+  {"date": "1974-10-30", "type": "turning", "ja": "「キンシャサの奇跡」で王座奪還", "en": "Regains the title in the 'Rumble in the Jungle'", "kind": "bloom"}]},
+{"id":"pele","wiki":"Pelé","ja":"ペレ","en":"Pelé","born":"1940-10-23","died":"2022-12-29","field":"sports","country":"BR",
+ "desc_ja":"ワールドカップを3度制したブラジルのサッカー選手","desc_en":"Brazilian footballer and three-time World Cup winner",
+ "milestones":[
+  {"date": "1958-06-29", "type": "breakthrough", "ja": "17歳、W杯決勝で2得点し優勝", "en": "Scores twice in the World Cup final at 17"},
+  {"date": "1970-06-21", "type": "award", "ja": "3度目のW杯優勝", "en": "Wins his third World Cup"}]},
+{"id":"comaneci","wiki":"Nadia Comăneci","ja":"ナディア・コマネチ","en":"Nadia Comăneci","born":"1961-11-12","died":null,"field":"sports","country":"RO",
+ "desc_ja":"五輪史上初の10点満点を出したルーマニアの体操選手","desc_en":"Romanian gymnast who scored the first perfect 10 in Olympic history",
+ "milestones":[
+  {"date": "1976-07-18", "type": "breakthrough", "ja": "14歳、モントリオール五輪で史上初の10点満点", "en": "At 14, scores the first perfect 10 at the Montreal Olympics"}]},
+{"id":"ruth","wiki":"Babe Ruth","ja":"ベーブ・ルース","en":"Babe Ruth","born":"1895-02-06","died":"1948-08-16","field":"sports","country":"US",
+ "desc_ja":"本塁打で野球そのものを変えた「野球の神様」","desc_en":"The home-run king who changed the game of baseball",
+ "milestones":[
+  {"date": "1920-01-03", "type": "turning", "ja": "投手から打者に転じ、ヤンキースへ移籍", "en": "Sold to the Yankees and turns from pitcher to slugger"},
+  {"date": "1927-09-30", "type": "breakthrough", "ja": "シーズン60本塁打", "en": "Hits 60 home runs in a season"}]},
+{"id":"jordan","wiki":"Michael Jordan","ja":"マイケル・ジョーダン","en":"Michael Jordan","born":"1963-02-17","died":null,"field":"sports","country":"US",
+ "desc_ja":"NBAで6度優勝したバスケットボールの象徴","desc_en":"Six-time NBA champion and the face of basketball",
+ "milestones":[
+  {"date": "1991-06-12", "type": "award", "ja": "初のNBA優勝", "en": "Wins his first NBA championship"},
+  {"date": "1993-10-06", "type": "turning", "ja": "30歳で突然の引退、野球に挑戦", "en": "Retires suddenly at 30 to try baseball"}]},
+{"id":"bolt","wiki":"Usain Bolt","ja":"ウサイン・ボルト","en":"Usain Bolt","born":"1986-08-21","died":null,"field":"sports","country":"JM",
+ "desc_ja":"100m9秒58の世界記録を持つジャマイカの短距離走者","desc_en":"Jamaican sprinter who holds the 9.58 s 100 m world record",
+ "milestones":[
+  {"date": "2008-08-16", "type": "award", "ja": "北京五輪100mで世界記録と金メダル", "en": "Wins Olympic 100 m gold in Beijing with a world record"},
+  {"date": "2009-08-16", "type": "breakthrough", "ja": "ベルリン世界陸上で9秒58", "en": "Runs 9.58 at the Berlin World Championships"}]},
+{"id":"ichiro","wiki":"Ichiro Suzuki","ja":"イチロー","en":"Ichiro Suzuki","born":"1973-10-22","died":null,"field":"sports","country":"JP",
+ "desc_ja":"日米通算4367安打。MLBシーズン最多安打262本の記録保持者","desc_en":"Holder of MLB's single-season hits record (262), with 4,367 hits across Japan and the US",
+ "milestones":[
+  {"date": "1994", "type": "breakthrough", "ja": "日本プロ野球初のシーズン200安打超え（210本）", "en": "Becomes the first NPB player to top 200 hits in a season (210)"},
+  {"date": "2001-04-02", "type": "turning", "ja": "27歳でメジャーリーグへ", "en": "Moves to the major leagues at 27"},
+  {"date": "2004-10-01", "type": "award", "ja": "84年ぶりにMLBシーズン最多安打記録を更新", "en": "Breaks MLB's 84-year-old single-season hits record"}]},
+{"id":"ohtani","wiki":"Shohei Ohtani","ja":"大谷翔平","en":"Shohei Ohtani","born":"1994-07-05","died":null,"field":"sports","country":"JP",
+ "desc_ja":"投手と打者の「二刀流」でMLBのMVPに輝いた野球選手","desc_en":"Two-way star who won MLB MVP as both pitcher and hitter",
+ "milestones":[
+  {"date": "2018-03-29", "type": "debut", "ja": "エンゼルスでメジャーデビュー", "en": "Makes his MLB debut with the Angels", "kind": "turning"},
+  {"date": "2021-11-18", "type": "award", "ja": "満票でア・リーグMVP", "en": "Unanimous American League MVP"}]},
+{"id":"hanyu","wiki":"Yuzuru Hanyu","ja":"羽生結弦","en":"Yuzuru Hanyu","born":"1994-12-07","died":null,"field":"sports","country":"JP",
+ "desc_ja":"冬季五輪で2連覇を果たしたフィギュアスケーター","desc_en":"Figure skater who won back-to-back Olympic golds",
+ "milestones":[
+  {"date": "2014-02-14", "type": "award", "ja": "19歳でソチ五輪金メダル", "en": "Wins Olympic gold in Sochi at 19"},
+  {"date": "2018-02-17", "type": "award", "ja": "平昌五輪で2連覇", "en": "Defends his title in Pyeongchang"}]},
+{"id":"oh","wiki":"Sadaharu Oh","ja":"王貞治","en":"Sadaharu Oh","born":"1940-05-20","died":null,"field":"sports","country":"JP",
+ "desc_ja":"通算868本塁打のプロ野球記録を持つ選手。国民栄誉賞第1号","desc_en":"Holder of pro baseball's career home-run record of 868",
+ "milestones":[
+  {"date": "1977-09-03", "type": "breakthrough", "ja": "通算756号で当時の世界記録を更新", "en": "Hits his 756th home run, then a world record"}]},
+{"id":"owens","wiki":"Jesse Owens","ja":"ジェシー・オーエンス","en":"Jesse Owens","born":"1913-09-12","died":"1980-03-31","field":"sports","country":"US",
+ "desc_ja":"ベルリン五輪で4つの金メダルを獲得した陸上選手","desc_en":"Track star who won four golds at the 1936 Berlin Olympics",
+ "milestones":[
+  {"date": "1935-05-25", "type": "breakthrough", "ja": "45分間で世界記録を3つ更新", "en": "Sets three world records within 45 minutes"},
+  {"date": "1936-08-09", "type": "award", "ja": "ベルリン五輪で4冠", "en": "Wins his fourth gold in Berlin"}]},
+{"id":"serena","wiki":"Serena Williams","ja":"セリーナ・ウィリアムズ","en":"Serena Williams","born":"1981-09-26","died":null,"field":"sports","country":"US",
+ "desc_ja":"4大大会シングルス23勝を挙げたテニス選手","desc_en":"Tennis player with 23 Grand Slam singles titles",
+ "milestones":[
+  {"date": "1999-09-11", "type": "award", "ja": "17歳で全米オープン初優勝", "en": "Wins her first US Open at 17"},
+  {"date": "2017-01-28", "type": "award", "ja": "35歳、妊娠中に全豪オープン優勝", "en": "Wins the Australian Open at 35 while pregnant"}]},
+{"id":"paige","wiki":"Satchel Paige","ja":"サチェル・ペイジ","en":"Satchel Paige","born":"1906-07-07","died":"1982-06-08","field":"sports","country":"US",
+ "desc_ja":"人種の壁でニグロリーグに留まり、42歳でようやくメジャーに立った伝説の投手","desc_en":"Negro-league legend kept out by segregation until he reached the majors at 42",
+ "milestones":[
+  {"date": "1948-07-09", "type": "debut", "ja": "42歳でメジャーデビュー", "en": "Makes his major-league debut at 42"},
+  {"date": "1965-09-25", "type": "turning", "ja": "59歳でメジャーのマウンドに立ち3回無失点", "en": "Pitches three scoreless innings in the majors at 59", "kind": "bloom"}]},
+{"id":"foreman","wiki":"George Foreman","ja":"ジョージ・フォアマン","en":"George Foreman","born":"1949-01-10","died":"2025-03-21","field":"sports","country":"US",
+ "desc_ja":"引退から10年後に復帰し、45歳で世界ヘビー級王座に返り咲いたボクサー","desc_en":"Boxer who came back after ten years away and regained the heavyweight title at 45",
+ "milestones":[
+  {"date": "1973-01-22", "type": "award", "ja": "世界ヘビー級王者に", "en": "Wins the world heavyweight title"},
+  {"date": "1994-11-05", "type": "breakthrough", "ja": "45歳で史上最年長の世界ヘビー級王者に", "en": "At 45, becomes the oldest heavyweight champion"}]},
+{"id":"nicklaus","wiki":"Jack Nicklaus","ja":"ジャック・ニクラス","en":"Jack Nicklaus","born":"1940-01-21","died":null,"field":"sports","country":"US",
+ "desc_ja":"メジャー18勝の「帝王」と呼ばれたゴルファー","desc_en":"'The Golden Bear', winner of a record 18 major championships",
+ "milestones":[
+  {"date": "1962-06-17", "type": "award", "ja": "全米オープンでメジャー初優勝", "en": "Wins his first major at the US Open"},
+  {"date": "1986-04-13", "type": "breakthrough", "ja": "46歳でマスターズ優勝", "en": "Wins the Masters at 46"}]},
+{"id":"brady","wiki":"Tom Brady","ja":"トム・ブレイディ","en":"Tom Brady","born":"1977-08-03","died":null,"field":"sports","country":"US",
+ "desc_ja":"ドラフト199位から7度のスーパーボウル制覇を成し遂げたクォーターバック","desc_en":"Quarterback drafted 199th who went on to win seven Super Bowls",
+ "milestones":[
+  {"date": "2000-04-16", "type": "debut", "ja": "ドラフト199位でNFL入り", "en": "Drafted 199th overall into the NFL", "kind": "turning"},
+  {"date": "2021-02-07", "type": "award", "ja": "43歳で7度目のスーパーボウル優勝", "en": "Wins his seventh Super Bowl at 43"}]},
+{"id":"torres","wiki":"Dara Torres","ja":"ダラ・トーレス","en":"Dara Torres","born":"1967-04-15","died":null,"field":"sports","country":"US",
+ "desc_ja":"5度の五輪に出場し、41歳でメダルを獲得した競泳選手","desc_en":"Swimmer who competed at five Olympics and won medals at 41",
+ "milestones":[
+  {"date": "2008-08-17", "type": "award", "ja": "41歳、北京五輪50m自由形で銀メダル", "en": "At 41, wins 50 m freestyle silver in Beijing"}]},
+{"id":"kasai","wiki":"Noriaki Kasai","ja":"葛西紀明","en":"Noriaki Kasai","born":"1972-06-06","died":null,"field":"sports","country":"JP",
+ "desc_ja":"「レジェンド」と呼ばれるスキージャンプ選手","desc_en":"Ski jumper nicknamed 'Legend'",
+ "milestones":[
+  {"date": "2014-02-15", "type": "award", "ja": "41歳、7度目の五輪で個人初メダル（ソチ・銀）", "en": "At 41, wins his first individual Olympic medal (silver) at his seventh Games"}]},
+{"id":"kazu","wiki":"Kazuyoshi Miura","ja":"三浦知良","en":"Kazuyoshi Miura","born":"1967-02-26","died":null,"field":"sports","country":"JP",
+ "desc_ja":"「キング・カズ」。50代でもプロを続けるサッカー選手","desc_en":"'King Kazu', still playing professional football past fifty",
+ "milestones":[
+  {"date": "1982", "type": "turning", "ja": "15歳で単身ブラジルへ", "en": "Leaves for Brazil alone at 15", "age": 15},
+  {"date": "2017-03-12", "type": "breakthrough", "ja": "50歳でJリーグ最年長得点", "en": "Becomes the oldest J.League goalscorer at 50"}]},
+{"id":"yamamotomasa","wiki":"Masahiro Yamamoto (baseball)","ja":"山本昌","en":"Masahiro Yamamoto","born":"1965-08-11","died":null,"field":"sports","country":"JP",
+ "desc_ja":"50歳まで現役を続けた中日ドラゴンズの投手","desc_en":"Chunichi Dragons pitcher who kept playing until 50",
+ "milestones":[
+  {"date": "2014-09-05", "type": "breakthrough", "ja": "49歳でプロ野球最年長勝利", "en": "At 49, the oldest pitcher to win a game in Japanese pro baseball"}]},
+{"id":"swahn","wiki":"Oscar Swahn","ja":"オスカー・スヴァーン","en":"Oscar Swahn","born":"1847-10-20","died":"1927-05-01","field":"sports","country":"SE",
+ "desc_ja":"60歳で五輪金メダル、72歳で史上最年長メダリストとなった射撃選手","desc_en":"Shooter who won Olympic gold at 60 and became the oldest Olympic medalist at 72",
+ "milestones":[
+  {"date": "1908-07", "type": "award", "ja": "60歳、ロンドン五輪で金メダル", "en": "At 60, wins Olympic gold in London"},
+  {"date": "1920-07", "type": "award", "ja": "72歳、アントワープ五輪で銀メダル", "en": "At 72, wins silver in Antwerp"}]},
+{"id":"hopkins","wiki":"Bernard Hopkins","ja":"バーナード・ホプキンス","en":"Bernard Hopkins","born":"1965-01-15","died":null,"field":"sports","country":"US",
+ "desc_ja":"40代後半まで世界王座を獲り続けたボクサー","desc_en":"Boxer who kept winning world titles into his late forties",
+ "milestones":[
+  {"date": "2011-05-21", "type": "breakthrough", "ja": "46歳で史上最年長の世界王者に", "en": "At 46, becomes the oldest world champion in boxing history"},
+  {"date": "2014-04-19", "type": "award", "ja": "49歳で再び王座獲得、自らの記録を更新", "en": "At 49, wins another title and breaks his own record"}]},
+{"id":"navratilova","wiki":"Martina Navratilova","ja":"マルチナ・ナブラチロワ","en":"Martina Navratilova","born":"1956-10-18","died":null,"field":"sports","country":"US",
+ "desc_ja":"4大大会で計59勝。ウィンブルドン単9勝のテニス選手","desc_en":"Winner of 59 Grand Slam titles, including nine Wimbledon singles",
+ "milestones":[
+  {"date": "1978-07-07", "type": "award", "ja": "ウィンブルドン初優勝", "en": "Wins her first Wimbledon"},
+  {"date": "2006-09-10", "type": "award", "ja": "49歳で全米オープン混合複優勝", "en": "Wins the US Open mixed doubles at 49"}]},
+{"id":"inamori","wiki":"Kazuo Inamori","ja":"稲盛和夫","en":"Kazuo Inamori","born":"1932-01-21","died":"2022-08-24","field":"business","country":"JP",
+ "desc_ja":"京セラとKDDIを創業し、78歳で日本航空を再建した経営者","desc_en":"Founder of Kyocera and KDDI who rescued Japan Airlines at 78",
+ "milestones":[
+  {"date": "1959-04-01", "type": "founding", "ja": "27歳で京都セラミック（京セラ）を創業", "en": "Founds Kyoto Ceramic (Kyocera) at 27"},
+  {"date": "1984-06-01", "type": "founding", "ja": "52歳で第二電電（現KDDI）を設立", "en": "Founds DDI, today's KDDI, at 52"},
+  {"date": "2010-02-01", "type": "turning", "ja": "78歳、無給で経営破綻した日本航空の会長に", "en": "At 78, takes over bankrupt Japan Airlines without pay"}]},
+{"id":"morrison","wiki":"Toni Morrison","ja":"トニ・モリスン","en":"Toni Morrison","born":"1931-02-18","died":"2019-08-05","field":"literature","country":"US",
+ "desc_ja":"編集者として働きながら39歳でデビューし、ノーベル文学賞を受けた米国の作家","desc_en":"Editor who debuted as a novelist at 39 and went on to win the Nobel Prize",
+ "milestones":[
+  {"date": "1970", "type": "debut", "ja": "初の長編『青い眼がほしい』を刊行", "en": "Publishes her first novel, The Bluest Eye"},
+  {"date": "1993-10-07", "type": "award", "ja": "62歳でノーベル文学賞", "en": "Awarded the Nobel Prize in Literature at 62"}]},
+{"id":"bukowski","wiki":"Charles Bukowski","ja":"チャールズ・ブコウスキー","en":"Charles Bukowski","born":"1920-08-16","died":"1994-03-09","field":"literature","country":"US",
+ "desc_ja":"郵便局員を辞めて49歳で専業作家となった米国の詩人・小説家","desc_en":"American poet and novelist who quit the post office to write full-time at 49",
+ "milestones":[
+  {"date": "1970-01", "type": "turning", "ja": "49歳で郵便局を辞め、専業作家に", "en": "Quits the post office at 49 to write full-time"},
+  {"date": "1971-02", "type": "debut", "ja": "50歳で初の長編『ポスト・オフィス』を刊行", "en": "Publishes his first novel, Post Office, at 50"}]},
+{"id":"wesley","wiki":"Mary Wesley","ja":"メアリー・ウェズリー","en":"Mary Wesley","born":"1912-06-24","died":"2002-12-30","field":"literature","country":"GB",
+ "desc_ja":"70歳で大人向け小説にデビューし、ベストセラー作家となった英国の作家","desc_en":"British novelist who published her first adult novel at 70 and became a bestseller",
+ "milestones":[
+  {"date": "1983", "type": "debut", "ja": "70歳で『Jumping the Queue』を刊行", "en": "Publishes Jumping the Queue at 70", "age": 70}]},
+{"id":"bernstein","wiki":"Harry Bernstein","ja":"ハリー・バーンスタイン","en":"Harry Bernstein","born":"1910-05-30","died":"2011-06-03","field":"literature","country":"US",
+ "desc_ja":"96歳で初の著書を出版した回想録作家","desc_en":"Memoirist who published his first book at 96",
+ "milestones":[
+  {"date": "2007-03", "type": "debut", "ja": "96歳で回想録『The Invisible Wall』を出版", "en": "Publishes his memoir The Invisible Wall at 96"}]},
+{"id":"kuroda","wiki":"Natsuko Kuroda","ja":"黒田夏子","en":"Natsuko Kuroda","born":"1937-03-23","died":null,"field":"literature","country":"JP",
+ "desc_ja":"75歳で芥川賞を受けた作家（史上最年長）","desc_en":"Writer who won the Akutagawa Prize at 75, the oldest ever",
+ "milestones":[
+  {"date": "2013-01-16", "type": "award", "ja": "75歳、『abさんご』で芥川賞", "en": "Wins the Akutagawa Prize at 75 for ab Sango"}]},
+{"id":"boyle","wiki":"Susan Boyle","ja":"スーザン・ボイル","en":"Susan Boyle","born":"1961-04-01","died":null,"field":"arts","country":"GB",
+ "desc_ja":"48歳でオーディション番組に出演し、一夜で世界的歌手となった","desc_en":"Singer who became a global star overnight after a TV audition at 48",
+ "milestones":[
+  {"date": "2009-04-11", "type": "breakthrough", "ja": "48歳、「ブリテンズ・ゴット・タレント」で『夢やぶれて』を歌う", "en": "Sings 'I Dreamed a Dream' on Britain's Got Talent at 48"}]},
+{"id":"jiro","wiki":"Jiro Ono","ja":"小野二郎","en":"Jiro Ono","born":"1925-10-27","died":null,"field":"other","country":"JP",
+ "desc_ja":"「すきやばし次郎」の鮨職人","desc_en":"Sushi master of Sukiyabashi Jiro",
+ "milestones":[
+  {"date": "2007-11-19", "type": "award", "ja": "82歳、ミシュラン東京版で三つ星", "en": "At 82, earns three stars in the first Michelin Guide Tokyo"}]},
+{"id":"marchand","wiki":"Robert Marchand (cyclist)","ja":"ロベール・マルシャン","en":"Robert Marchand","born":"1911-11-26","died":"2021-05-22","field":"sports","country":"FR",
+ "desc_ja":"100歳を超えてアワーレコードを樹立し続けたフランスの自転車選手","desc_en":"French cyclist who kept setting hour records past the age of 100",
+ "milestones":[
+  {"date": "2012-02-17", "type": "breakthrough", "ja": "100歳で1時間に24.25kmを走り、100歳以上の部の記録を樹立", "en": "At 100, rides 24.25 km in an hour, setting the over-100 record"},
+  {"date": "2017-01-04", "type": "award", "ja": "105歳で1時間に22.547kmを走り、105歳以上の部の記録を樹立", "en": "At 105, rides 22.547 km in an hour, setting the over-105 record"}]},
+{"id":"hidekichi","wiki":"Hidekichi Miyazaki","ja":"宮崎秀吉","en":"Hidekichi Miyazaki","born":"1910-09-22","died":"2019-01-23","field":"sports","country":"JP",
+ "desc_ja":"90代で陸上競技を始め、「ゴールデン・ボルト」と呼ばれたスプリンター","desc_en":"Sprinter who took up athletics in his nineties, nicknamed 'Golden Bolt'",
+ "milestones":[
+  {"date": "2015-09-23", "type": "breakthrough", "ja": "105歳の誕生日の翌日、100mで105歳以上の部の世界記録", "en": "The day after turning 105, sets the 100 m world record for the over-105 class"}]},
+{"id":"kotelko","wiki":"Olga Kotelko","ja":"オルガ・コテルコ","en":"Olga Kotelko","born":"1919-03-02","died":"2014-06-24","field":"sports","country":"CA",
+ "desc_ja":"77歳で陸上競技を始め、年代別の世界記録を20以上打ち立てたカナダの選手","desc_en":"Canadian who took up track and field at 77 and set more than 20 age-group world records",
+ "milestones":[
+  {"date": "1996", "type": "debut", "ja": "77歳で陸上競技を始める", "en": "Takes up track and field at 77", "kind": "turning", "age": 77}]},
+{"id":"keizo","wiki":"Keizo Miura","ja":"三浦敬三","en":"Keizo Miura","born":"1904-02-15","died":"2006-01-05","field":"sports","country":"JP",
+ "desc_ja":"100歳を超えても滑り続けた山岳スキーヤー。三浦雄一郎の父","desc_en":"Mountain skier who kept skiing past 100; father of Yuichiro Miura",
+ "milestones":[
+  {"date": "2003", "type": "breakthrough", "ja": "99歳でモンブランの氷河（ヴァレ・ブランシュ）を滑降", "en": "At 99, skis down Mont Blanc's Vallée Blanche glacier", "age": 99}]},
+{"id":"fauja","wiki":"Fauja Singh","ja":"ファウジャ・シン","en":"Fauja Singh","born":"1911-04-01","died":"2025-07-14","approx":true,"field":"sports","country":"GB",
+ "desc_ja":"89歳でマラソンを始め、100歳でフルマラソンを完走したランナー（生年は本人の申告による）","desc_en":"Runner who began marathons at 89 and finished one at 100 (birth date as he reported it)",
+ "milestones":[
+  {"date": "2000-04", "type": "debut", "ja": "89歳でロンドン・マラソンに初出場", "en": "Runs his first marathon, in London, at 89", "kind": "turning"},
+  {"date": "2011-10-16", "type": "breakthrough", "ja": "100歳でトロント・マラソンを完走", "en": "Finishes the Toronto Marathon at 100"}]},
+{"id":"gauss","wiki":"Carl Friedrich Gauss","ja":"カール・フリードリヒ・ガウス","en":"Carl Friedrich Gauss","born":"1777-04-30","died":"1855-02-23","field":"science","country":"DE",
+ "desc_ja":"「数学の王」と呼ばれ、整数論・天文学・電磁気学に業績を残したドイツの数学者","desc_en":"The 'prince of mathematicians', with lasting work in number theory, astronomy and magnetism",
+ "milestones":[
+  {"date": "1796-03-30", "type": "breakthrough", "ja": "18歳で正十七角形が定規とコンパスで作図できることを発見", "en": "At 18, shows the regular 17-gon can be constructed with ruler and compass"},
+  {"date": "1801", "type": "masterpiece", "ja": "24歳で『整数論の研究』を刊行", "en": "Publishes Disquisitiones Arithmeticae at 24", "age": 24}]},
+{"id":"liszt","wiki":"Franz Liszt","ja":"フランツ・リスト","en":"Franz Liszt","born":"1811-10-22","died":"1886-07-31","field":"arts","country":"HU",
+ "desc_ja":"超絶技巧で一世を風靡したハンガリー出身のピアニスト・作曲家","desc_en":"Hungarian virtuoso pianist and composer who dazzled 19th-century Europe",
+ "milestones":[
+  {"date": "1822-12-01", "type": "debut", "ja": "11歳でウィーン・デビュー", "en": "Makes his Vienna debut at 11"}]},
+{"id":"saintsaens","wiki":"Camille Saint-Saëns","ja":"カミーユ・サン＝サーンス","en":"Camille Saint-Saëns","born":"1835-10-09","died":"1921-12-16","field":"arts","country":"FR",
+ "desc_ja":"『動物の謝肉祭』で知られるフランスの作曲家。幼少から神童と呼ばれた","desc_en":"French composer of The Carnival of the Animals, a child prodigy",
+ "milestones":[
+  {"date": "1846-05-06", "type": "debut", "ja": "10歳でパリのサル・プレイエルでデビュー演奏会", "en": "Gives his debut recital at the Salle Pleyel in Paris at 10"}]},
+{"id":"menuhin","wiki":"Yehudi Menuhin","ja":"ユーディ・メニューイン","en":"Yehudi Menuhin","born":"1916-04-22","died":"1999-03-12","field":"arts","country":"US",
+ "desc_ja":"7歳でデビューした20世紀を代表するヴァイオリニスト","desc_en":"Violinist who debuted at seven and became one of the 20th century's greatest",
+ "milestones":[
+  {"date": "1927-11-25", "type": "breakthrough", "ja": "11歳、ニューヨークでベートーヴェンの協奏曲を弾き喝采を浴びる", "en": "At 11, triumphs in Beethoven's concerto in New York"}]},
+{"id":"picasso","wiki":"Pablo Picasso","ja":"パブロ・ピカソ","en":"Pablo Picasso","born":"1881-10-25","died":"1973-04-08","field":"arts","country":"ES",
+ "desc_ja":"キュビスムを創始した20世紀を代表する画家","desc_en":"Co-founder of Cubism and a towering figure of 20th-century art",
+ "milestones":[
+  {"date": "1896", "type": "debut", "ja": "10代半ばで描いた『初聖体拝領』をバルセロナの美術展に出品", "en": "In his mid-teens, exhibits First Communion in Barcelona"},
+  {"date": "1907", "type": "masterpiece", "ja": "『アヴィニョンの娘たち』を描く", "en": "Paints Les Demoiselles d'Avignon"}]},
+{"id":"braille","wiki":"Louis Braille","ja":"ルイ・ブライユ","en":"Louis Braille","born":"1809-01-04","died":"1852-01-06","field":"science","country":"FR",
+ "desc_ja":"自らも盲目で、今も世界で使われる点字を考案したフランスの教育者","desc_en":"Blind French educator who invented the braille writing system",
+ "milestones":[
+  {"date": "1824", "type": "breakthrough", "ja": "15歳で点字の原型を考案", "en": "Devises his raised-dot system at 15", "age": 15}]},
+{"id":"farnsworth","wiki":"Philo Farnsworth","ja":"フィロ・ファーンズワース","en":"Philo Farnsworth","born":"1906-08-19","died":"1971-03-11","field":"science","country":"US",
+ "desc_ja":"電子式テレビを発明した米国の発明家","desc_en":"American inventor of fully electronic television",
+ "milestones":[
+  {"date": "1921", "type": "turning", "ja": "畑を耕しながら、電子でテレビ映像を走査する方法を思いつく", "en": "While plowing a field as a teenager, conceives scanning images electronically"},
+  {"date": "1927-09-07", "type": "breakthrough", "ja": "21歳で電子式テレビの映像伝送に成功", "en": "At 21, transmits the first electronic television image"}]},
+{"id":"tao","wiki":"Terence Tao","ja":"テレンス・タオ","en":"Terence Tao","born":"1975-07-17","died":null,"field":"science","country":"AU",
+ "desc_ja":"「数学のモーツァルト」と呼ばれるオーストラリア出身の数学者","desc_en":"Australian-born mathematician dubbed the 'Mozart of Math'",
+ "milestones":[
+  {"date": "1988-07-21", "type": "award", "ja": "13歳で国際数学オリンピック金メダル（史上最年少）", "en": "Wins International Mathematical Olympiad gold at 13, the youngest ever"},
+  {"date": "2006-08-22", "type": "award", "ja": "31歳でフィールズ賞", "en": "Awarded the Fields Medal at 31"}]},
+{"id":"wiener","wiki":"Norbert Wiener","ja":"ノーバート・ウィーナー","en":"Norbert Wiener","born":"1894-11-26","died":"1964-03-18","field":"science","country":"US",
+ "desc_ja":"サイバネティクスを創始した米国の数学者","desc_en":"American mathematician who founded cybernetics",
+ "milestones":[
+  {"date": "1909-06", "type": "debut", "ja": "14歳でタフツ大学を卒業", "en": "Graduates from Tufts College at 14"},
+  {"date": "1913-06", "type": "breakthrough", "ja": "18歳でハーバード大学の博士号を取得", "en": "Earns a Harvard PhD at 18"}]},
+{"id":"nash","wiki":"John Forbes Nash Jr.","ja":"ジョン・ナッシュ","en":"John Nash","born":"1928-06-13","died":"2015-05-23","field":"science","country":"US",
+ "desc_ja":"ゲーム理論の「ナッシュ均衡」を生んだ米国の数学者。映画『ビューティフル・マインド』のモデル","desc_en":"American mathematician behind the Nash equilibrium; subject of A Beautiful Mind",
+ "milestones":[
+  {"date": "1950-05", "type": "breakthrough", "ja": "21歳の博士論文でナッシュ均衡を示す", "en": "At 21, his doctoral thesis introduces the Nash equilibrium"},
+  {"date": "1994-10-11", "type": "award", "ja": "66歳でノーベル経済学賞", "en": "Wins the Nobel Memorial Prize in Economics at 66"}]},
+{"id":"shannon","wiki":"Claude Shannon","ja":"クロード・シャノン","en":"Claude Shannon","born":"1916-04-30","died":"2001-02-24","field":"science","country":"US",
+ "desc_ja":"「情報理論の父」と呼ばれる米国の数学者・電気工学者","desc_en":"American mathematician and engineer known as the father of information theory",
+ "milestones":[
+  {"date": "1937-08", "type": "breakthrough", "ja": "21歳の修士論文で、スイッチ回路をブール代数で設計できることを示す", "en": "At 21, his master's thesis shows switching circuits can be designed with Boolean algebra"},
+  {"date": "1948-07", "type": "masterpiece", "ja": "32歳で論文『通信の数学的理論』を発表", "en": "Publishes A Mathematical Theory of Communication at 32"}]},
+{"id":"godel","wiki":"Kurt Gödel","ja":"クルト・ゲーデル","en":"Kurt Gödel","born":"1906-04-28","died":"1978-01-14","field":"science","country":"AT",
+ "desc_ja":"不完全性定理で数学の限界を示した論理学者","desc_en":"Logician whose incompleteness theorems revealed the limits of mathematics",
+ "milestones":[
+  {"date": "1931", "type": "breakthrough", "ja": "不完全性定理を発表", "en": "Publishes his incompleteness theorems"}]},
+{"id":"dirac","wiki":"Paul Dirac","ja":"ポール・ディラック","en":"Paul Dirac","born":"1902-08-08","died":"1984-10-20","field":"science","country":"GB",
+ "desc_ja":"反物質の存在を予言した英国の理論物理学者","desc_en":"English theoretical physicist who predicted antimatter",
+ "milestones":[
+  {"date": "1928-01", "type": "breakthrough", "ja": "25歳でディラック方程式を発表", "en": "Publishes the Dirac equation at 25"},
+  {"date": "1933-12-10", "type": "award", "ja": "31歳でノーベル物理学賞", "en": "Receives the Nobel Prize in Physics at 31"}]},
+{"id":"heisenberg","wiki":"Werner Heisenberg","ja":"ヴェルナー・ハイゼンベルク","en":"Werner Heisenberg","born":"1901-12-05","died":"1976-02-01","field":"science","country":"DE",
+ "desc_ja":"量子力学を創始し、不確定性原理を示したドイツの物理学者","desc_en":"German physicist who founded quantum mechanics and formulated the uncertainty principle",
+ "milestones":[
+  {"date": "1925-07", "type": "breakthrough", "ja": "23歳で行列力学を発表し、量子力学を創始", "en": "At 23, founds quantum mechanics with matrix mechanics"},
+  {"date": "1927", "type": "breakthrough", "ja": "不確定性原理を発表", "en": "Publishes the uncertainty principle"}]},
+{"id":"bragg","wiki":"Lawrence Bragg","ja":"ローレンス・ブラッグ","en":"Lawrence Bragg","born":"1890-03-31","died":"1971-07-01","field":"science","country":"GB",
+ "desc_ja":"父とともにX線で結晶の構造を解く方法を確立した物理学者","desc_en":"Physicist who, with his father, founded X-ray crystallography",
+ "milestones":[
+  {"date": "1912-11", "type": "breakthrough", "ja": "22歳でブラッグの法則を発表", "en": "Formulates Bragg's law at 22"},
+  {"date": "1915-11", "type": "award", "ja": "25歳でノーベル物理学賞（史上最年少の科学分野受賞）", "en": "At 25, the youngest Nobel laureate in the sciences"}]},
+{"id":"moseley","wiki":"Henry Moseley","ja":"ヘンリー・モーズリー","en":"Henry Moseley","born":"1887-11-23","died":"1915-08-10","field":"science","country":"GB",
+ "desc_ja":"原子番号の物理的な意味を明らかにし、27歳で戦死した英国の物理学者","desc_en":"English physicist who explained atomic number, killed in action at 27",
+ "milestones":[
+  {"date": "1913", "type": "breakthrough", "ja": "モーズリーの法則を発見し、原子番号の意味を明らかにする", "en": "Discovers Moseley's law, giving atomic number its physical meaning"}]},
+{"id":"lovelace","wiki":"Ada Lovelace","ja":"エイダ・ラブレス","en":"Ada Lovelace","born":"1815-12-10","died":"1852-11-27","field":"science","country":"GB",
+ "desc_ja":"世界初のコンピュータ・プログラムを書いたとされる数学者","desc_en":"Mathematician credited with writing the first computer program",
+ "milestones":[
+  {"date": "1843-09", "type": "masterpiece", "ja": "27歳で解析機関の注釈を発表。世界初とされるプログラムを含む", "en": "At 27, publishes her notes on the Analytical Engine, including what is considered the first program"}]},
+{"id":"mshelley","wiki":"Mary Shelley","ja":"メアリー・シェリー","en":"Mary Shelley","born":"1797-08-30","died":"1851-02-01","field":"literature","country":"GB",
+ "desc_ja":"『フランケンシュタイン』でSFの先駆けとなった英国の作家","desc_en":"English novelist whose Frankenstein pioneered science fiction",
+ "milestones":[
+  {"date": "1816-06", "type": "turning", "ja": "18歳、ジュネーヴ郊外の別荘で『フランケンシュタイン』の構想を得る", "en": "At 18, conceives Frankenstein at a villa near Geneva"},
+  {"date": "1818-01-01", "type": "masterpiece", "ja": "20歳で『フランケンシュタイン』を刊行", "en": "Publishes Frankenstein at 20"}]},
+{"id":"sagan","wiki":"Françoise Sagan","ja":"フランソワーズ・サガン","en":"Françoise Sagan","born":"1935-06-21","died":"2004-09-24","field":"literature","country":"FR",
+ "desc_ja":"18歳のデビュー作で世界的ベストセラー作家となったフランスの作家","desc_en":"French writer who became an international bestseller with her debut at 18",
+ "milestones":[
+  {"date": "1954-03", "type": "debut", "ja": "18歳で『悲しみよこんにちは』を刊行", "en": "Publishes Bonjour Tristesse at 18"}]},
+{"id":"radiguet","wiki":"Raymond Radiguet","ja":"レイモン・ラディゲ","en":"Raymond Radiguet","born":"1903-06-18","died":"1923-12-12","field":"literature","country":"FR",
+ "desc_ja":"10代で書いた『肉体の悪魔』で名声を得て、20歳で夭折したフランスの作家","desc_en":"French novelist famed for The Devil in the Flesh, dead at 20",
+ "milestones":[
+  {"date": "1923-03", "type": "masterpiece", "ja": "19歳で『肉体の悪魔』を刊行", "en": "Publishes The Devil in the Flesh at 19"}]},
+{"id":"mishima","wiki":"Yukio Mishima","ja":"三島由紀夫","en":"Yukio Mishima","born":"1925-01-14","died":"1970-11-25","field":"literature","country":"JP",
+ "desc_ja":"『金閣寺』『潮騒』などで知られる戦後日本文学を代表する作家","desc_en":"Leading postwar Japanese novelist, author of The Temple of the Golden Pavilion",
+ "milestones":[
+  {"date": "1941", "type": "debut", "ja": "10代で『花ざかりの森』を発表", "en": "Publishes The Forest in Full Bloom as a teenager"},
+  {"date": "1949-07", "type": "breakthrough", "ja": "24歳で『仮面の告白』を刊行し、文壇の寵児に", "en": "Publishes Confessions of a Mask at 24 and becomes a literary star"}]},
+{"id":"wataya","wiki":"Risa Wataya","ja":"綿矢りさ","en":"Risa Wataya","born":"1984-02-01","died":null,"field":"literature","country":"JP",
+ "desc_ja":"19歳で芥川賞を受けた作家（史上最年少）","desc_en":"Novelist who won the Akutagawa Prize at 19, the youngest ever",
+ "milestones":[
+  {"date": "2001-11", "type": "debut", "ja": "17歳で『インストール』により文藝賞を受けデビュー", "en": "Debuts at 17 with Install, winning the Bungei Prize"},
+  {"date": "2004-01-15", "type": "award", "ja": "19歳で『蹴りたい背中』により芥川賞", "en": "Wins the Akutagawa Prize at 19 for The Back You Want to Kick"}]},
+{"id":"pushkin","wiki":"Alexander Pushkin","ja":"アレクサンドル・プーシキン","en":"Alexander Pushkin","born":"1799-06-06","died":"1837-02-10","field":"literature","country":"RU",
+ "desc_ja":"近代ロシア文学の祖。決闘で37歳で没した","desc_en":"Founder of modern Russian literature, killed in a duel at 37",
+ "milestones":[
+  {"date": "1814", "type": "debut", "ja": "詩が初めて雑誌に掲載される", "en": "His first poem appears in print"},
+  {"date": "1833", "type": "masterpiece", "ja": "『エヴゲーニイ・オネーギン』を完結して刊行", "en": "Publishes the complete Eugene Onegin"}]},
+{"id":"beardsley","wiki":"Aubrey Beardsley","ja":"オーブリー・ビアズリー","en":"Aubrey Beardsley","born":"1872-08-21","died":"1898-03-16","field":"arts","country":"GB",
+ "desc_ja":"白黒の線画で世紀末美術を代表し、25歳で没した英国の挿絵画家","desc_en":"English illustrator whose black-and-white drawings defined the fin de siècle; dead at 25",
+ "milestones":[
+  {"date": "1894-02", "type": "breakthrough", "ja": "21歳でワイルド『サロメ』の挿絵を手がける", "en": "Illustrates Oscar Wilde's Salome at 21"}]},
+{"id":"pergolesi","wiki":"Giovanni Battista Pergolesi","ja":"ジョヴァンニ・バッティスタ・ペルゴレージ","en":"Giovanni Battista Pergolesi","born":"1710-01-04","died":"1736-03-16","field":"arts","country":"IT",
+ "desc_ja":"『スターバト・マーテル』を残し26歳で没したイタリアの作曲家","desc_en":"Italian composer of the Stabat Mater, dead at 26",
+ "milestones":[
+  {"date": "1733-08-28", "type": "masterpiece", "ja": "23歳で『奥様女中』を初演", "en": "Premieres La serva padrona at 23"}]},
+{"id":"schiele","wiki":"Egon Schiele","ja":"エゴン・シーレ","en":"Egon Schiele","born":"1890-06-12","died":"1918-10-31","field":"arts","country":"AT",
+ "desc_ja":"鋭い線の人物画で知られ、スペイン風邪で28歳で没したオーストリアの画家","desc_en":"Austrian painter of intense figures, dead of Spanish flu at 28",
+ "milestones":[
+  {"date": "1906-10", "type": "turning", "ja": "16歳でウィーン美術アカデミーに入学", "en": "Enters the Vienna Academy of Fine Arts at 16"}]},
+{"id":"stevie","wiki":"Stevie Wonder","ja":"スティーヴィー・ワンダー","en":"Stevie Wonder","born":"1950-05-13","died":null,"field":"arts","country":"US",
+ "desc_ja":"11歳でモータウンと契約した米国のシンガーソングライター","desc_en":"American singer-songwriter signed to Motown at 11",
+ "milestones":[
+  {"date": "1963-08", "type": "breakthrough", "ja": "13歳で『フィンガーティップス』が全米1位（史上最年少）", "en": "At 13, 'Fingertips' becomes a US number one, the youngest ever"}]},
+{"id":"misora","wiki":"Hibari Misora","ja":"美空ひばり","en":"Hibari Misora","born":"1937-05-29","died":"1989-06-24","field":"arts","country":"JP",
+ "desc_ja":"12歳でデビューし「歌謡界の女王」と呼ばれた歌手","desc_en":"Singer who debuted as a child and became the 'queen of Japanese popular song'",
+ "milestones":[
+  {"date": "1949", "type": "breakthrough", "ja": "主演映画の主題歌『悲しき口笛』が大ヒット", "en": "'Kanashiki Kuchibue', the theme of her film, becomes a huge hit"}]},
+{"id":"temple","wiki":"Shirley Temple","ja":"シャーリー・テンプル","en":"Shirley Temple","born":"1928-04-23","died":"2014-02-10","field":"arts","country":"US",
+ "desc_ja":"世界恐慌期の米国で国民的人気を得た子役。のちに外交官","desc_en":"Child star who cheered Depression-era America, later a diplomat",
+ "milestones":[
+  {"date": "1935-02-27", "type": "award", "ja": "6歳でアカデミー子役賞", "en": "Receives the Academy Juvenile Award at 6"}]},
+{"id":"tatum","wiki":"Tatum O'Neal","ja":"テイタム・オニール","en":"Tatum O'Neal","born":"1963-11-05","died":null,"field":"arts","country":"US",
+ "desc_ja":"10歳でアカデミー助演女優賞を受けた女優（競争部門の史上最年少）","desc_en":"Actress who won a competitive Oscar at 10, the youngest ever",
+ "milestones":[
+  {"date": "1974-04-02", "type": "award", "ja": "10歳で『ペーパー・ムーン』によりアカデミー助演女優賞", "en": "Wins the Oscar for Best Supporting Actress at 10 for Paper Moon"}]},
+{"id":"paquin","wiki":"Anna Paquin","ja":"アンナ・パキン","en":"Anna Paquin","born":"1982-07-24","died":null,"field":"arts","country":"NZ",
+ "desc_ja":"映画初出演の『ピアノ・レッスン』で11歳にしてアカデミー賞を受けた女優","desc_en":"Actress who won an Oscar at 11 for her first film, The Piano",
+ "milestones":[
+  {"date": "1994-03-21", "type": "award", "ja": "11歳でアカデミー助演女優賞", "en": "Wins the Oscar for Best Supporting Actress at 11"}]},
+{"id":"carlsen","wiki":"Magnus Carlsen","ja":"マグヌス・カールセン","en":"Magnus Carlsen","born":"1990-11-30","died":null,"field":"sports","country":"NO",
+ "desc_ja":"チェス史上最高のレーティングを記録したノルウェーの世界王者","desc_en":"Norwegian world chess champion with the highest rating in history",
+ "milestones":[
+  {"date": "2004-04-26", "type": "award", "ja": "13歳でグランドマスター", "en": "Becomes a grandmaster at 13"},
+  {"date": "2013-11-22", "type": "award", "ja": "22歳でチェス世界王者", "en": "Becomes world chess champion at 22"}]},
+{"id":"polgar","wiki":"Judit Polgár","ja":"ユディット・ポルガー","en":"Judit Polgár","born":"1976-07-23","died":null,"field":"sports","country":"HU",
+ "desc_ja":"史上最強の女性チェス棋士と呼ばれるハンガリーのグランドマスター","desc_en":"Hungarian grandmaster, widely considered the strongest female chess player ever",
+ "milestones":[
+  {"date": "1991-12", "type": "award", "ja": "15歳でグランドマスター（当時の史上最年少）", "en": "Becomes a grandmaster at 15, then the youngest ever"}]},
+{"id":"fujii","wiki":"Sōta Fujii","ja":"藤井聡太","en":"Sōta Fujii","born":"2002-07-19","died":null,"field":"sports","country":"JP",
+ "desc_ja":"14歳でプロ入りし、21歳で全8タイトルを独占した将棋棋士","desc_en":"Shogi player who turned pro at 14 and held all eight major titles at 21",
+ "milestones":[
+  {"date": "2016-10-01", "type": "debut", "ja": "14歳でプロ棋士（史上最年少）", "en": "Becomes a professional at 14, the youngest ever"},
+  {"date": "2020-07-16", "type": "award", "ja": "17歳で棋聖を獲得（史上最年少タイトル）", "en": "Wins the Kisei title at 17, the youngest title holder ever"},
+  {"date": "2023-10-11", "type": "breakthrough", "ja": "21歳で八冠を独占", "en": "Holds all eight major titles at 21"}]},
+{"id":"habu","wiki":"Yoshiharu Habu","ja":"羽生善治","en":"Yoshiharu Habu","born":"1970-09-27","died":null,"field":"sports","country":"JP",
+ "desc_ja":"中学生でプロ入りし、史上初の七冠を達成した将棋棋士","desc_en":"Shogi player who turned pro in junior high and first held all seven titles",
+ "milestones":[
+  {"date": "1985-12-18", "type": "debut", "ja": "15歳で中学生プロ棋士に", "en": "Turns professional at 15, while still in junior high"},
+  {"date": "1996-02-14", "type": "breakthrough", "ja": "25歳で七冠を独占（史上初）", "en": "Holds all seven major titles at 25, a first"}]},
+{"id":"iwasaki","wiki":"Kyoko Iwasaki","ja":"岩崎恭子","en":"Kyoko Iwasaki","born":"1978-07-21","died":null,"field":"sports","country":"JP",
+ "desc_ja":"14歳で五輪金メダルを獲得した競泳選手（競泳史上最年少）","desc_en":"Swimmer who won Olympic gold at 14, the youngest swimming champion",
+ "milestones":[
+  {"date": "1992-07-27", "type": "award", "ja": "14歳、バルセロナ五輪200m平泳ぎで金メダル", "en": "Wins 200 m breaststroke gold in Barcelona at 14"}]},
+{"id":"gestring","wiki":"Marjorie Gestring","ja":"マージョリー・ゲストリング","en":"Marjorie Gestring","born":"1922-11-18","died":"1992-04-20","field":"sports","country":"US",
+ "desc_ja":"13歳で五輪金メダルを獲得した飛込選手（女子個人種目の史上最年少）","desc_en":"Diver who won Olympic gold at 13, the youngest female individual champion",
+ "milestones":[
+  {"date": "1936-08-12", "type": "award", "ja": "13歳、ベルリン五輪3m飛板飛込で金メダル", "en": "Wins springboard gold in Berlin at 13"}]},
+{"id":"fumingxia","wiki":"Fu Mingxia","ja":"伏明霞","en":"Fu Mingxia","born":"1978-08-16","died":null,"field":"sports","country":"CN",
+ "desc_ja":"12歳で世界王者、13歳で五輪女王となった中国の飛込選手","desc_en":"Chinese diver who was world champion at 12 and Olympic champion at 13",
+ "milestones":[
+  {"date": "1991-01-04", "type": "award", "ja": "12歳で世界選手権の高飛込を制す", "en": "Wins the world platform title at 12"},
+  {"date": "1992-07-27", "type": "award", "ja": "13歳、バルセロナ五輪高飛込で金メダル", "en": "Wins Olympic platform gold in Barcelona at 13"}]},
+{"id":"nishiya","wiki":"Momiji Nishiya","ja":"西矢椛","en":"Momiji Nishiya","born":"2007-08-30","died":null,"field":"sports","country":"JP",
+ "desc_ja":"13歳で東京五輪スケートボード初代女王となった選手","desc_en":"Skateboarder who became the first Olympic street champion at 13",
+ "milestones":[
+  {"date": "2021-07-26", "type": "award", "ja": "13歳、東京五輪スケートボード・ストリートで金メダル", "en": "Wins Olympic street skateboarding gold in Tokyo at 13"}]},
+{"id":"hingis","wiki":"Martina Hingis","ja":"マルチナ・ヒンギス","en":"Martina Hingis","born":"1980-09-30","died":null,"field":"sports","country":"CH",
+ "desc_ja":"16歳で世界ランク1位となったスイスのテニス選手","desc_en":"Swiss tennis player who reached world number one at 16",
+ "milestones":[
+  {"date": "1997-01-25", "type": "award", "ja": "16歳で全豪オープン優勝（4大大会の最年少優勝）", "en": "Wins the Australian Open at 16, the youngest Grand Slam champion of the century"}]},
+{"id":"becker","wiki":"Boris Becker","ja":"ボリス・ベッカー","en":"Boris Becker","born":"1967-11-22","died":null,"field":"sports","country":"DE",
+ "desc_ja":"17歳でウィンブルドンを制したドイツのテニス選手","desc_en":"German tennis player who won Wimbledon at 17",
+ "milestones":[
+  {"date": "1985-07-07", "type": "award", "ja": "17歳でウィンブルドン優勝（男子史上最年少）", "en": "Wins Wimbledon at 17, the youngest men's champion"}]},
+{"id":"tendulkar","wiki":"Sachin Tendulkar","ja":"サチン・テンドルカール","en":"Sachin Tendulkar","born":"1973-04-24","died":null,"field":"sports","country":"IN",
+ "desc_ja":"「クリケットの神様」と呼ばれるインドの打者","desc_en":"Indian batsman revered as the 'God of Cricket'",
+ "milestones":[
+  {"date": "1989-11-15", "type": "debut", "ja": "16歳でテストマッチにデビュー", "en": "Makes his Test debut at 16"}]},
+{"id":"mbappe","wiki":"Kylian Mbappé","ja":"キリアン・エムバペ","en":"Kylian Mbappé","born":"1998-12-20","died":null,"field":"sports","country":"FR",
+ "desc_ja":"19歳でW杯を制したフランスのサッカー選手","desc_en":"French footballer who won the World Cup at 19",
+ "milestones":[
+  {"date": "2018-07-15", "type": "award", "ja": "19歳、W杯決勝でゴールを決めて優勝", "en": "Scores in the World Cup final and wins it at 19"}]},
+{"id":"yamal","wiki":"Lamine Yamal","ja":"ラミン・ヤマル","en":"Lamine Yamal","born":"2007-07-13","died":null,"field":"sports","country":"ES",
+ "desc_ja":"17歳で欧州王者となったスペインのサッカー選手","desc_en":"Spanish footballer who became European champion at 17",
+ "milestones":[
+  {"date": "2024-07-14", "type": "award", "ja": "17歳の誕生日の翌日、欧州選手権で優勝", "en": "Wins the European Championship the day after turning 17"}]},
+{"id":"malala","wiki":"Malala Yousafzai","ja":"マララ・ユスフザイ","en":"Malala Yousafzai","born":"1997-07-12","died":null,"field":"politics","country":"PK",
+ "desc_ja":"女子教育の権利を訴え続けるパキスタン出身の活動家","desc_en":"Pakistani activist for girls' education",
+ "milestones":[
+  {"date": "2012-10-09", "type": "turning", "ja": "15歳、通学中に武装勢力に銃撃される", "en": "At 15, is shot by militants on her way home from school"},
+  {"date": "2014-10-10", "type": "award", "ja": "17歳でノーベル平和賞（史上最年少）", "en": "Named the youngest-ever Nobel Peace laureate at 17"}]},
+{"id":"dell","wiki":"Michael Dell","ja":"マイケル・デル","en":"Michael Dell","born":"1965-02-23","died":null,"field":"business","country":"US",
+ "desc_ja":"大学の寮で起業し、世界的なパソコンメーカーを育てた実業家","desc_en":"Founded a global PC maker from his college dorm room",
+ "milestones":[
+  {"date": "1984-05-03", "type": "founding", "ja": "19歳で大学の寮からデル（当時PC's Limited）を創業", "en": "Founds Dell (then PC's Limited) from his dorm at 19"}]},
+{"id":"ishikawa","wiki":"Ryo Ishikawa","ja":"石川遼","en":"Ryo Ishikawa","born":"1991-09-17","died":null,"field":"sports","country":"JP",
+ "desc_ja":"15歳でツアー優勝した「ハニカミ王子」","desc_en":"Japanese golfer who won a pro tour event at 15",
+ "milestones":[
+  {"date": "2007-05-20", "type": "award", "ja": "15歳、アマチュアでプロのツアーに優勝（世界最年少）", "en": "Wins a professional tour event as a 15-year-old amateur, a world record"}]},
+{"id":"valens","wiki":"Ritchie Valens","ja":"リッチー・ヴァレンス","en":"Ritchie Valens","born":"1941-05-13","died":"1959-02-03","field":"arts","country":"US",
+ "desc_ja":"『ラ・バンバ』でロックンロールにラテンの響きを持ち込み、17歳で飛行機事故により没した歌手","desc_en":"Singer who brought Latin rhythm to rock 'n' roll with 'La Bamba', killed in a plane crash at 17",
+ "milestones":[
+  {"date": "1958-10", "type": "breakthrough", "ja": "17歳で『ドナ』『ラ・バンバ』を発表し、全米でヒット", "en": "At 17, releases 'Donna' and 'La Bamba', both national hits"}]},
+{"id":"chatterton","wiki":"Thomas Chatterton","ja":"トマス・チャタートン","en":"Thomas Chatterton","born":"1752-11-20","died":"1770-08-24","field":"literature","country":"GB",
+ "desc_ja":"中世の僧に仮託した詩で知られ、17歳で没した英国の詩人。ロマン派の詩人たちに崇拝された","desc_en":"English poet known for his pseudo-medieval verse, dead at 17 and revered by the Romantics",
+ "milestones":[
+  {"date": "1770-04", "type": "turning", "ja": "17歳でブリストルからロンドンに出て、文筆で身を立てようとする", "en": "At 17, moves from Bristol to London to live by his pen"}]}
+]

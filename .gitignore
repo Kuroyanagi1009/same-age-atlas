@@ -1,0 +1,6 @@
+# 取得し直せるキャッシュ・一時ファイル（版管理しない）
+data/_desc_cache.json
+data/_fetch_raw.json
+data/_new.json
+scripts/__pycache__/
+*.log

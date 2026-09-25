@@ -1,0 +1,89 @@
+// UI 文言（日英）。t(key, vars) で取り出す。
+const I18N = {
+  ja: {
+    title: "同い年の星図",
+    tagline: "あなたの年齢で、散った星と、芽吹いた星。",
+    years: "歳",
+    died_same: "あなたと同じ{a}歳で、{name}が亡くなりました",
+    died_before: "{name}は{d}歳で亡くなりました。あなたはその{n}年先を生きています",
+    turning_same: "{a}歳で、{name}は{what}",
+    bloom_next: "{n}年後の{b}歳で、{name}は{what}",
+    col_died: "この年齢で世を去った",
+    col_now: "この年齢で迎えた転機・開花",
+    col_ahead: "この先に花開く人",
+    none: "—",
+    more: "ほか {n}人",
+    in_years: "あと{n}年",
+    at_age: "{n}歳",
+    age_range: "{a}〜{b}歳頃",
+    died_at: "{n}歳で没",
+    living: "存命",
+    you: "あなた",
+    lifebars: "人生の長さを並べる",
+    sky_help: "横軸は年齢。上の星は転機（緑）と開花（金）、下の青い星は没年。つまみか星図を横に動かし、離したところの年齢で見出しが変わる。",
+    all: "すべて",
+    fields: { science: "科学", arts: "芸術", literature: "文学・思想", business: "ビジネス", politics: "政治・宗教・社会", sports: "スポーツ", other: "その他" },
+    types: { debut: "デビュー", breakthrough: "飛躍", founding: "創業・設立", masterpiece: "代表作", award: "受賞", turning: "転機" },
+    kinds: { turning: "転機", bloom: "開花" },
+    ev_award: "{x}を受賞",
+    ev_founding: "「{x}」を設立",
+    stars_loading: "星を読み込み中…",
+    stars_count: "{n}人の星",
+    search_ph: "人物を名前で探す（例：アインシュタイン）",
+    no_hit: "見つかりません",
+    see_age: "この年齢を見る",
+    life: "生涯",
+    close: "閉じる",
+    wiki: "Wikipedia で読む",
+    fame: "知名度（日本語版Wikipediaの直近30日の閲覧数）",
+  },
+  en: {
+    title: "Same-Age Atlas",
+    tagline: "At your age — the stars that fell, and the stars that rose.",
+    years: "years",
+    died_same: "At {a} — your age — {name} died",
+    died_before: "{name} died at {d}. You have lived {n} years beyond that",
+    turning_same: "At {a}, {name}: {what}",
+    bloom_next: "In {n} years, at {b}, {name}: {what}",
+    col_died: "Died at this age",
+    col_now: "Turning points and blooms at this age",
+    col_ahead: "Still ahead of you",
+    none: "—",
+    more: "+{n} more",
+    in_years: "in {n} yrs",
+    at_age: "age {n}",
+    age_range: "age {a}–{b}",
+    died_at: "died at {n}",
+    living: "living",
+    you: "You",
+    lifebars: "Lives side by side",
+    sky_help: "Horizontal axis is age. Above: turning points (green) and blooms (gold). Below, in blue: deaths. Drag the slider or the sky; the headline updates when you let go.",
+    all: "All",
+    fields: { science: "Science", arts: "Arts", literature: "Letters", business: "Business", politics: "Politics, religion & society", sports: "Sports", other: "Other" },
+    types: { debut: "Debut", breakthrough: "Breakthrough", founding: "Founding", masterpiece: "Masterpiece", award: "Award", turning: "Turning point" },
+    kinds: { turning: "Turning point", bloom: "Bloom" },
+    ev_award: "Receives the {x}",
+    ev_founding: "Founds {x}",
+    stars_loading: "Loading stars…",
+    stars_count: "{n} stars",
+    search_ph: "Find a person by name (e.g. Einstein)",
+    no_hit: "No match",
+    see_age: "Look at this age",
+    life: "Life",
+    close: "Close",
+    wiki: "Read on Wikipedia",
+    fame: "Fame (English Wikipedia views, last 30 days)",
+  },
+};
+
+let LANG = (() => {
+  try { const s = localStorage.getItem("ga.lang"); if (s) return s; } catch (e) {}
+  return (navigator.language || "ja").startsWith("ja") ? "ja" : "en";
+})();
+
+function t(key, vars) {
+  let s = key.split(".").reduce((o, k) => (o ? o[k] : undefined), I18N[LANG]) ?? key;
+  if (vars) for (const [k, v] of Object.entries(vars)) s = s.replaceAll(`{${k}}`, v);
+  if (LANG === "en") s = s.replace(/\b1 years\b/g, "1 year").replace(/\b1 yrs\b/g, "1 yr");
+  return s;
+}

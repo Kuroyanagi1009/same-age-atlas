@@ -1,0 +1,10 @@
+# 背景の星から外す出来事。「人物の英語名 | 出来事の英語表記の先頭」を1行に1件。# 以降はコメント
+# Wikidata の「創業者」が誤り・誤解を招くもの
+Carl Benz | Mercedes-Benz          # 1926年の合併で生まれたブランド。ベンツが創業したのは Benz & Cie.
+Henry Ford | Cadillac              # フォードが去った後の Henry Ford Company から生まれた
+Jimmy Wales | Wikimedia Commons    # ウェールズが創業したものではない
+# 改組・改名で、同じ会社の創業が2回に見えるもの
+Mark Zuckerberg | Meta Platforms   # Facebook の法人（2004年）。Facebook の創業と重複
+Larry Page | Alphabet              # 2015年の持株会社化。Google の創業と重複
+Sergey Brin | Alphabet
+Steven Spielberg | DreamWorks Animation  # DreamWorks と重複
