@@ -4,6 +4,7 @@ const AXIS_MAX = MAX_AGE + 1; // 横軸の右端（100歳の帯 [100, 101) ま�
 const THUMB = 18;             // スライダーのつまみの幅（style.css と合わせる）
 const DEFAULT_AGE = 30;       // 初めて開いたときの年齢
 const AHEAD_YEARS = 15;       // 「この先に花開く人」は最長この年数先まで
+const HEADLINE_WINDOWS = [3, 5, 10, AHEAD_YEARS]; // 見出しの「この先」は近い順にこの年数以内から探す
 const V = 14;                  // データのキャッシュよけ
 const state = {
   people: [], byId: new Map(), pv: { ja: {}, en: {} },
@@ -341,7 +342,16 @@ function renderHeadline() {
   const what = (e) => short(e.text[LANG].replace(/^\d+歳(?:頃)?(?:[、,]|で、?)\s*|^At \d+,\s*/, ""), 38);
   const turn = best(firstEvents(ppl, (e) => e.kind === "turning" && e.lo <= A && A <= e.hi), (x) => x.p);
   if (turn) line("turning", t("turning_same", { a: A, name: nm(turn.p), what: what(turn.e) }), turn.p);
-  const next = best(firstEvents(ppl, (e) => e.kind === "bloom" && e.lo > A && e.lo <= A + AHEAD_YEARS), (x) => x.p);
+  // 同じ年齢での開花（7歳のアカデミー子役賞など、若い年齢の例を見出しにも出す）
+  const bloom = best(firstEvents(ppl.filter((p) => p !== turn?.p), (e) => e.kind === "bloom" && e.lo <= A && A <= e.hi), (x) => x.p);
+  if (bloom) line("bloom", t("bloom_same", { a: A, name: nm(bloom.p), what: what(bloom.e) }), bloom.p);
+  // この先の開花：近い未来から探す（3年以内に誰かいればその中で最も有名な人。いなければ5年、10年、15年と広げる）
+  const soon = firstEvents(ppl.filter((p) => p !== bloom?.p), (e) => e.kind === "bloom" && e.lo > A && e.lo <= A + AHEAD_YEARS);
+  let next = null;
+  for (const within of HEADLINE_WINDOWS) {
+    next = best(soon.filter((x) => x.e.lo <= A + within), (x) => x.p);
+    if (next) break;
+  }
   if (next) line("bloom", t("bloom_next", { n: next.e.lo - A, b: next.e.lo, name: nm(next.p), what: what(next.e) }), next.p);
   $("compare").innerHTML = li.join("");
 }

@@ -98,26 +98,34 @@ POLITICIAN = re.compile(r"politician|statesperson|diplomat|military officer|mili
 GRAVE_CONVICTION = re.compile(
     r"murder|homicide|killing|manslaughter|genocide|war crime|crime against humanity|"
     r"crime against peace|terror|bomb|rape|sexual|sex trafficking|indecent assault|child", re.I)
+# 賞の記述に付く「重要な出来事」(P793) がこれなら、受賞していない（辞退・取り消し）
+DECLINED = re.compile(r"declin|refus|reject|revok|rescind|withdr|stripped|forfeit", re.I)
 MIN_DEATH_AGE = 15  # これより若く亡くなった人（幼い君主など）は業績で知られるわけではないので外す
 MIN_FOUNDING_AGE = 15
 # これより前に生まれた人は、日まで書かれていても伝承による日付が多い（ムハンマド、李白など）ので外す
 MIN_BIRTH_YEAR = 1000
 
 
-def sparql(query, retries=5):
-    for i in range(retries):
+def sparql(query, retries=5, max_throttled=30):
+    """回数制限（429）は Retry-After だけ待って失敗に数えない（連続で問い合わせると起きる）。
+    それ以外の失敗は retries 回まで間隔を広げてやり直す"""
+    failures = throttled = 0
+    while True:
         try:
             r = requests.post(ENDPOINT, data={"query": query, "format": "json"},
                               headers=HEADERS, timeout=90)
-            if r.status_code == 429:
-                time.sleep(int(r.headers.get("Retry-After", 10)))
+            if r.status_code == 429 and throttled < max_throttled:
+                throttled += 1
+                time.sleep(int(r.headers.get("Retry-After", 10)) + 1)
                 continue
             r.raise_for_status()
             return r.json()["results"]["bindings"]
         except (requests.RequestException, ValueError) as e:
-            print(f"  retry {i + 1}: {e}", file=sys.stderr)
-            time.sleep(5 * (i + 1))
-    raise RuntimeError("SPARQL failed")
+            failures += 1
+            print(f"  retry {failures}: {str(e)[:200]}", file=sys.stderr)
+            if failures >= retries:
+                raise RuntimeError("SPARQL failed") from e
+            time.sleep(5 * failures)
 
 
 def qid(uri):
@@ -334,6 +342,10 @@ SELECT ?p ?aw ?t ?tp ?en ?ja WHERE {{
   VALUES ?aw {{ {award_values} }}
   ?p p:P166 ?st . ?st ps:P166 ?aw ; pqv:P585 ?tv .
   ?tv wikibase:timeValue ?t ; wikibase:timePrecision ?tp .
+  FILTER NOT EXISTS {{
+    ?st pq:P793 ?ev . ?ev rdfs:label ?evL FILTER(LANG(?evL) = "en")
+    FILTER(REGEX(?evL, "{DECLINED.pattern}", "i"))
+  }}
   OPTIONAL {{ ?aw rdfs:label ?en FILTER(LANG(?en) = "en") }}
   OPTIONAL {{ ?aw rdfs:label ?ja FILTER(LANG(?ja) = "ja") }}
 }}"""):
@@ -399,22 +411,42 @@ def exclusion(k, name_en, occ, flags, field, died, ex_ids, ex_names):
     return None
 
 
+def fetch_declined(values):
+    """{(qid, 賞の英語名)}: 辞退・取り消しの注記がある受賞の記述"""
+    out = set()
+    award_values = " ".join(f"wd:{a}" for a in AWARDS)
+    for r in sparql(f"""
+SELECT ?p ?awL ?evL WHERE {{
+  VALUES ?p {{ {values} }}
+  VALUES ?aw {{ {award_values} }}
+  ?p p:P166 ?st . ?st ps:P166 ?aw ; pq:P793 ?ev .
+  ?ev rdfs:label ?evL FILTER(LANG(?evL) = "en")
+  ?aw rdfs:label ?awL FILTER(LANG(?awL) = "en")
+}}"""):
+        if DECLINED.search(val(r, "evL")):
+            out.add((qid(val(r, "p")), val(r, "awL")))
+    return out
+
+
 def refilter():
     """既存の stars.json に除外ルールを当て直す（職業などだけ取り直すので速い）。
     exclude.txt を編集したあとはこれで足りる。消すだけなので、ルールを緩めたときは全取得し直す"""
     ex_ids, ex_names = load_exclude()
     stars = json.loads(OUT.read_text(encoding="utf-8"))
-    occ, flags = {}, {}
+    occ, flags, declined = {}, {}, set()
     for batch in chunks([s["q"] for s in stars], BATCH):
         values = " ".join(f"wd:{i}" for i in batch)
         occ.update(fetch_occupations(values))
+        for small in chunks(batch, 100):  # 賞×人の組み合わせが重く、300人だとタイムアウトする
+            declined |= fetch_declined(" ".join(f"wd:{i}" for i in small))
         for k, f in fetch_flags(values).items():
             flags.setdefault(k, set()).update(f)
     ex_events = load_exclude_events()
     kept, dropped, n_ev = [], {}, 0
     for s in stars:
         before = len(s["ev"])
-        s["ev"] = clean_events(s["en"], s["f"], s["ev"], ex_events)
+        s["ev"] = [e for e in clean_events(s["en"], s["f"], s["ev"], ex_events)
+                   if not (e["type"] == "award" and (s["q"], e["en"]) in declined)]
         n_ev += before - len(s["ev"])
         reason = exclusion(s["q"], s["en"], occ.get(s["q"], set()), flags.get(s["q"], set()), s["f"],
                            s["d"], ex_ids, ex_names)

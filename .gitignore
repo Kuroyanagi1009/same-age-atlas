@@ -4,3 +4,6 @@ data/_fetch_raw.json
 data/_new.json
 scripts/__pycache__/
 *.log
+
+# 旧データの控え（手元だけに置く。公開しない）
+backups/

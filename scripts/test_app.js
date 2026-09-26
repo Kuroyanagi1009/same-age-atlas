@@ -120,6 +120,30 @@ setTimeout(async () => {
   const vermeer = run(`(function () { const p = state.people.find((x) => x.name.en === "Johannes Vermeer"); return p ? deathLabel(p) : null; })()`);
   check("生没が年までの人は幅で出る（フェルメール）", vermeer === null || /〜/.test(String(vermeer)), String(vermeer));
 
+  // 見出しの「この先」：近い未来に誰かいるなら遠くを選ばない（39歳で14年後のノーラン、を防ぐ）。
+  // その年齢に開花がある人がいれば見出しにも出す（7歳のアカデミー子役賞など）
+  const head = run(`(function () {
+    const bad = [];
+    for (let a = 0; a <= 100; a++) {
+      state.view = a; commitAge();
+      const ppl = state.people.filter(visible);
+      const m = $("compare").innerHTML.match(/(\\d+)年後の/);
+      if (m) {
+        const n = +m[1];
+        const nearest = HEADLINE_WINDOWS.find((w) => firstEvents(ppl, (e) => e.kind === "bloom" && e.lo > a && e.lo <= a + w).length);
+        if (nearest && n > nearest) bad.push(a + "歳: " + n + "年後（" + nearest + "年以内に候補あり）");
+      }
+      const hasBloomNow = firstEvents(ppl, (e) => e.kind === "bloom" && e.lo <= a && a <= e.hi).length > 0;
+      if (hasBloomNow && !/class="bloom">\\d+歳で/.test($("compare").innerHTML)) bad.push(a + "歳: 同じ年齢の開花が見出しにない");
+    }
+    return bad;
+  })()`);
+  check("見出し: 近い未来を優先・同じ年齢の開花を出す", head.length === 0, head.slice(0, 4).join(", "));
+  run("state.view = 39; commitAge();");
+  console.log("     39歳の見出し: " + run("state.headLines.join(' / ')"));
+  run("state.view = 7; commitAge();");
+  console.log("     7歳の見出し: " + run("state.headLines.join(' / ')"));
+
   // 共有の文面：年齢と見出しの3行
   run("state.view = 30; commitAge();");
   const shared = run("shareText()");
