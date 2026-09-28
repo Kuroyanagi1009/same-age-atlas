@@ -5,7 +5,7 @@ const THUMB = 18;             // スライダーのつまみの幅（style.css �
 const DEFAULT_AGE = 30;       // 初めて開いたときの年齢
 const AHEAD_YEARS = 15;       // 「この先に花開く人」は最長この年数先まで
 const HEADLINE_WINDOWS = [3, 5, 10, AHEAD_YEARS]; // 見出しの「この先」は近い順にこの年数以内から探す
-const V = 14;                  // データのキャッシュよけ
+const V = 15;                  // データのキャッシュよけ
 const state = {
   people: [], byId: new Map(), pv: { ja: {}, en: {} },
   // view: 表示中の年齢（ドラッグ中も動く） / myAge: 確定した年齢（離したとき。見出しはこちらで作る）
@@ -131,6 +131,7 @@ async function loadData() {
   const knownQ = new Set(Object.values(meta).map((m) => m.q));
   const knownTitles = new Set(featured.map((p) => p.wiki));
   render();
+  if (typeof maybeStartTour === "function") maybeStartTour(); // 初回の使い方ガイド（tour.js）
   try {
     $("starCount").textContent = t("stars_loading");
     const stars = await getJSON("data/stars.json");
@@ -279,6 +280,8 @@ function render(headline = true) {
   document.querySelectorAll("[data-i18n]").forEach((el) => (el.textContent = t(el.dataset.i18n)));
   document.querySelectorAll("[data-i18n-ph]").forEach((el) => (el.placeholder = t(el.dataset.i18nPh)));
   $("lang").textContent = LANG === "ja" ? "EN" : "日本語";
+  $("help").title = t("help");
+  $("help").setAttribute("aria-label", t("help"));
   $("view").value = state.view;
   const n = state.people.length;
   $("starCount").textContent = n > 200 ? t("stars_count", { n: n.toLocaleString() }) : "";
@@ -289,6 +292,7 @@ function render(headline = true) {
   drawSky();
   drawLifebars();
   if (!$("card").hidden && state.cardId) openCard(state.cardId);
+  if (typeof tourRefresh === "function") tourRefresh();
 }
 
 function renderChips() {

@@ -133,6 +133,22 @@ main { max-width: 1120px; margin: 0 auto; padding: 0 16px 48px; }
 #lifebars text { fill: var(--text); font-family: var(--sans); font-size: 12px; }
 #lifebars .axis text { fill: var(--muted); font-size: 10px; }
 
+/* 初回の使い方ガイド（tour.js） */
+.top-r { display: flex; gap: 8px; margin-left: auto; }
+.help-btn { padding: 4px 11px; }
+.tour-block { position: fixed; inset: 0; z-index: 30; }
+.tour-hole { position: fixed; z-index: 31; border-radius: 14px; pointer-events: none; box-shadow: 0 0 0 2px var(--gold-dim), 0 0 0 9999px rgba(3, 4, 10, 0.74); }
+.tour-pop { position: fixed; z-index: 32; width: min(340px, calc(100vw - 32px)); background: var(--bg2); border: 1px solid var(--line); border-radius: 14px; padding: 12px 16px; box-shadow: 0 20px 60px rgba(0,0,0,0.6); font-size: 0.9rem; }
+.tour-block[hidden], .tour-hole[hidden], .tour-pop[hidden] { display: none; }
+.tour-n { margin: 0; font-size: 0.72rem; color: var(--muted); }
+.tour-text { margin: 4px 0 12px; line-height: 1.7; }
+.tour-btns { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.tour-btns > span { display: flex; gap: 6px; }
+.tour-btns button { background: none; border: 1px solid var(--line); color: var(--muted); border-radius: 999px; padding: 4px 14px; font-size: 0.8rem; cursor: pointer; }
+.tour-btns button:hover { color: var(--text); }
+.tour-btns .tour-skip { border-color: transparent; padding-left: 0; }
+.tour-btns .tour-next { background: var(--gold); border-color: var(--gold); color: var(--bg); font-weight: 500; }
+
 .foot { text-align: center; color: var(--muted); font-size: 0.75rem; padding: 24px 16px 40px; }
 
 @media (max-width: 760px) {

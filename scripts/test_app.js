@@ -22,6 +22,7 @@ function el(id) {
       id, hidden: false, value: "", textContent: "", innerHTML: "", style: {}, dataset: {}, children: [],
       clientWidth: 900, clientHeight: 380, classList: { toggle: noop, add: noop },
       addEventListener: noop, append: noop, setAttribute: noop, focus: noop, scrollIntoView: noop, setPointerCapture: noop,
+      querySelector: () => null, querySelectorAll: () => [],
       getContext: () => ctx2d, getBoundingClientRect: () => ({ left: 0, top: 0, width: 900, height: 380 }),
     };
   }
@@ -36,10 +37,14 @@ const sandbox = {
   localStorage: { getItem: (k) => store[k] ?? null, setItem: (k, v) => (store[k] = String(v)), removeItem: (k) => delete store[k] },
   location: { get href() { return href; }, get search() { return new URL(href).search; } },
   history: { replaceState: (a, b, u) => { href = String(u); } },
-  window: { addEventListener: noop, devicePixelRatio: 1 },
+  window: { addEventListener: noop, removeEventListener: noop, scrollBy: noop, devicePixelRatio: 1, innerWidth: 900, innerHeight: 800 },
   document: {
-    getElementById: el, querySelectorAll: () => [], addEventListener: noop, documentElement: {}, title: "",
-    createElement: () => ({ onclick: null, set innerHTML(v) { this._h = v; }, get textContent() { return (this._h || "").replace(/<[^>]+>/g, ""); } }),
+    getElementById: el, querySelector: el, querySelectorAll: () => [], addEventListener: noop, removeEventListener: noop,
+    documentElement: {}, title: "", body: el("body"),
+    createElement: () => ({
+      onclick: null, style: {}, set innerHTML(v) { this._h = v; }, get textContent() { return (this._h || "").replace(/<[^>]+>/g, ""); },
+      setAttribute: noop, addEventListener: noop, querySelector: () => null,
+    }),
   },
   fetch: async (url) => {
     if (/^https?:/.test(url)) throw new Error("network disabled in test");
@@ -48,7 +53,7 @@ const sandbox = {
   },
 };
 vm.createContext(sandbox);
-for (const f of ["i18n.js", "app.js"]) vm.runInContext(fs.readFileSync(path.join(ROOT, f), "utf8"), sandbox, { filename: f });
+for (const f of ["i18n.js", "app.js", "tour.js"]) vm.runInContext(fs.readFileSync(path.join(ROOT, f), "utf8"), sandbox, { filename: f });
 const run = (code) => vm.runInContext(code, sandbox);
 
 // ---------- 検査 ----------
@@ -157,6 +162,25 @@ setTimeout(async () => {
   // URL で年齢を指定して開ける
   const age = run(`(function () { const s = location.search; history.replaceState(null, "", "http://x/?age=12"); state.myAge = 30; loadInputs(); const a = state.myAge; history.replaceState(null, "", "http://x/" + s); return a; })()`);
   check("URL の ?age= で年齢を開ける", age === 12, String(age));
+
+  // 初回の使い方ガイド
+  check("初回はガイドが開く", run("tourOpen") === true);
+  run("endTour()");
+  check("ガイドを閉じると覚える", store["ga.tour"] === "done" && run("tourOpen") === false);
+  run("maybeStartTour()");
+  check("2回目からは出ない", run("tourOpen") === false);
+  const viaLink = run(`(function () {
+    const s = location.search; localStorage.removeItem("ga.tour");
+    history.replaceState(null, "", "http://x/?age=12"); loadInputs(); maybeStartTour();
+    const r = { open: tourOpen, age: state.myAge }; endTour(); history.replaceState(null, "", "http://x/" + s); return r;
+  })()`);
+  check("共有リンク（?age=）でも初回は出て、年齢はそのまま", viaLink.open === true && viaLink.age === 12, JSON.stringify(viaLink));
+  const missing = run(`(function () {
+    const bad = []; const keep = LANG;
+    for (const l of ["ja", "en"]) { LANG = l; for (const k of [...TOUR_STEPS.map((x) => x.key), "tour_next", "tour_back", "tour_skip", "tour_start", "help"]) if (t(k) === k) bad.push(l + ":" + k); }
+    LANG = keep; return bad;
+  })()`);
+  check("ガイドの文言が日英ともある", missing.length === 0, missing.join(","));
 
   console.log(failures.length ? `\n${failures.length} 件の失敗` : "\nすべて通過");
   process.exit(failures.length ? 1 : 0);
